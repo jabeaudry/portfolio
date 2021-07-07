@@ -1,0 +1,37 @@
+html {
+  scrollbar-face-color: rgba(245, 245, 245, 0.5);
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
+  scrollbar-gutter: both; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+  z-index: 100; }
+
+::-webkit-scrollbar-button {
+  background-color: rgba(245, 245, 245, 0.5); }
+
+::-webkit-scrollbar-track {
+  background-color: whitesmoke; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #000; }
+
+::-webkit-scrollbar-thumb {
+  height: calc(3vh+2px);
+  height: -moz-calc(3vh+2px);
+  height: -webkit-calc(3vh+2px);
+  background-color: whitesmoke;
+  border-radius: 1px; }
+
+::-webkit-scrollbar-corner {
+  background-color: #646464; }
+
+::-webkit-resizer {
+  background-color: #666; }

@@ -1,0 +1,6 @@
+server cmd:
+http-server
+
+compile sass cmd:
+npm run scss
+

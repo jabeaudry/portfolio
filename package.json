@@ -1,0 +1,16 @@
+{
+  "name": "j-portfolio",
+  "version": "1.0.0",
+  "description": "Jacinthe 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o assets/css",
+    "start": "node server.js"
+  },
+  "author": "Jacinthe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
