@@ -1,5 +1,5 @@
 html {
-  scrollbar-face-color: rgba(245, 245, 245, 0.5);
+  scrollbar-face-color: #000;
   scrollbar-base-color: #646464;
   scrollbar-3dlight-color: #646464;
   scrollbar-highlight-color: #646464;
@@ -15,10 +15,10 @@ html {
   z-index: 100; }
 
 ::-webkit-scrollbar-button {
-  background-color: rgba(245, 245, 245, 0.5); }
+  background-color: #000; }
 
 ::-webkit-scrollbar-track {
-  background-color: whitesmoke; }
+  background-color: rgba(245, 245, 245, 0.5); }
 
 ::-webkit-scrollbar-track-piece {
   background-color: #000; }

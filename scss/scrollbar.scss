@@ -1,5 +1,5 @@
 html {
-    scrollbar-face-color: rgba(245,245,245,0.5);
+    scrollbar-face-color: #000;
     scrollbar-base-color: #646464;
     scrollbar-3dlight-color: #646464;
     scrollbar-highlight-color: #646464;
@@ -13,8 +13,8 @@ html {
   }
   
   ::-webkit-scrollbar { width: 8px; height: 3px; z-index: 100;}
-  ::-webkit-scrollbar-button {  background-color: rgba(245,245,245,0.5);}
-  ::-webkit-scrollbar-track {  background-color: rgba(245,245,245,1);}
+  ::-webkit-scrollbar-button {  background-color: #000;}
+  ::-webkit-scrollbar-track {  background-color: rgba(245,245,245,0.5);}
   ::-webkit-scrollbar-track-piece { background-color: #000;}
   ::-webkit-scrollbar-thumb { height: calc(3vh+2px);height: -moz-calc(3vh+2px);height: -webkit-calc(3vh+2px); background-color: rgba(245,245,245,1); border-radius: 1px; }
   ::-webkit-scrollbar-corner { background-color: #646464;}

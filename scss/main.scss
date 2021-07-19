@@ -40,6 +40,12 @@ html {
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 //import
 @import "navbar";
 
@@ -47,102 +53,12 @@ html {
 @media (min-width: 576px) { 
   $rect-height: 2.5vw;
 
-  //rectangles
-  .s1-rectangle {
-    width: $rect-height;
-    z-index: 15;
-    position: absolute;
-  }
-  #b1 {
-    right: 6vw;
-    height: $rect-height*10;
-    width: $rect-height;
-    background-color: $main-blue;
-  }
-  
-  
-  #y1 {
-    right: 6vw+$rect-height*2;
-    height: $rect-height*9;
-    width: $rect-height;
-    background-color: $main-yellow;
-  }
-  
-  #r1 {
-    right: 6vw+$rect-height*4;
-    height: $rect-height*8;
-    width: $rect-height;
-    background-color: $main-red;
-  }
-  
-  #w1 {
-    right: 6vw+$rect-height*6;
-    height: $rect-height*7;
-    width: $rect-height;
-    background-color: $main-white;
-  }
-  
-  #w2 {
-    right: 6vw+$rect-height*8;
-    height: $rect-height*6;
-    width: $rect-height;
-    background-color: $main-white;
-  }
-  
-  #w3 {
-    right: 6vw+$rect-height*10;
-    height: $rect-height*5;
-    width: $rect-height;
-    background-color: $main-white;
-  }
  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
   $rect-height: 2.5vw;
 
-  #b1 {
-    right: 6vw;
-    height: $rect-height*10;
-    width: $rect-height;
-    background-color: $main-blue;
-  }
-  
-  
-  #y1 {
-    right: 6vw+$rect-height*2;
-    height: $rect-height*9;
-    width: $rect-height;
-    background-color: $main-yellow;
-  }
-  
-  #r1 {
-    right: 6vw+$rect-height*4;
-    height: $rect-height*8;
-    width: $rect-height;
-    background-color: $main-red;
-  }
-  
-  #w1 {
-    right: 6vw+$rect-height*6;
-    height: $rect-height*7;
-    width: $rect-height;
-    background-color: $main-white;
-  }
-  
-  #w2 {
-    right: 6vw+$rect-height*8;
-    height: $rect-height*6;
-    width: $rect-height;
-    background-color: $main-white;
-  }
-  
-  #w3 {
-    right: 6vw+$rect-height*10;
-    height: $rect-height*5;
-    width: $rect-height;
-    background-color: $main-white;
-  }
   .picture-txt {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -161,99 +77,18 @@ html {
 @media (min-width: 992px) { 
   $rect-height: 2.5vw;
 
-  #b1 {
-    right: 6vw;
-    height: $rect-height*16;
-    width: $rect-height;
-    background-color: $main-blue;
-  }
-  
-  
-  #y1 {
-    right: 6vw+$rect-height*2;
-    height: $rect-height*14;
-    width: $rect-height;
-    background-color: $main-yellow;
-  }
-  
-  #r1 {
-    right: 6vw+$rect-height*4;
-    height: $rect-height*12;
-    width: $rect-height;
-    background-color: $main-red;
-  }
-  
-  #w1 {
-    right: 6vw+$rect-height*6;
-    height: $rect-height*10;
-    width: $rect-height;
-    background-color: $main-white;
-  }
-  
-  #w2 {
-    right: 6vw+$rect-height*8;
-    height: $rect-height*8;
-    width: $rect-height;
-    background-color: $main-white;
-  }
-  
-  #w3 {
-    right: 6vw+$rect-height*10;
-    height: $rect-height*6;
-    width: $rect-height;
-    background-color: $main-white;
-  }
+ 
  }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
 
 $rect-height: 2.5vw;
-#b1 {
-  right: 6vw;
-  height: $rect-height*14;
-  width: $rect-height;
-  background-color: $main-blue;
-}
-
-
-#y1 {
-  right: 6vw+$rect-height*2;
-  height: $rect-height*12;
-  width: $rect-height;
-  background-color: $main-yellow;
-}
-
-#r1 {
-  right: 6vw+$rect-height*4;
-  height: $rect-height*10;
-  width: $rect-height;
-  background-color: $main-red;
-}
-
-#w1 {
-  right: 6vw+$rect-height*6;
-  height: $rect-height*8;
-  width: $rect-height;
-  background-color: $main-white;
-}
-
-#w2 {
-  right: 6vw+$rect-height*8;
-  height: $rect-height*6;
-  width: $rect-height;
-  background-color: $main-white;
-}
-
-#w3 {
-  right: 6vw+$rect-height*10;
-  height: $rect-height*4;
-  width: $rect-height;
-  background-color: $main-white;
-}
-
 
 }
+
+
+
 @media (min-width: 1400px) {
   .picture-txt {
     font-family: monospace;
@@ -273,7 +108,6 @@ $rect-height: 2.5vw;
 //individual containers
 
 section {
-  
   overflow: visible;
 }
 
@@ -283,7 +117,7 @@ section {
   width: 100%;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
@@ -297,7 +131,7 @@ section {
 }
 
 .s1-intro {
-  width: 40vw;
+  width: 50%;
   color: $main-white;
   font-family: 'Inter', sans-serif;
   text-align:justify;
@@ -305,21 +139,43 @@ section {
   position: absolute;
   top: 8vh;
   left: 6.5vw;
-  opacity: 0;
+  opacity: 1;
   height: 20vh;
+  font-size: 10vw;
+}
+
+.s1-intro-right {
+  width: 50%;
+  color: $main-black;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  position: absolute;
+  top: 8vh;
+  left: 50vw;
+  padding-left: 5.5vw;
+  opacity: 1;
+  height: 20vh;
+  font-size: 10vw;
+  left: unset;
 }
 
 .s1-sub-intro {
   margin: auto;
-  width: 40vw;
-  color: $main-white;
+  width: 37vw;
+  color: $main-black;
   font-family: 'Inter', sans-serif;
-  text-align:justify;
+  text-align:left;
   position: absolute;
-  top: 37vh;
-  left: 6.5vw;
-  height: 10vh;
-  opacity: 0;
+  top: 48vh;
+  right: 6.5vw;
+  height: 30vh;
+  opacity:1;
+  font-size: 3vw;
+  //margin-right: -0.5vw;
+  //padding-right: 3vw;
+  //border
+  //border-bottom: 2px solid $main-black;
+  //border-right: 2px solid $main-black;
 }
 
 .my-picture {
@@ -335,6 +191,7 @@ section {
   .s1-p2 {
     width: 50%;
     height: 100%;
+    background-color: $main-white;
    
   }
 
@@ -343,18 +200,11 @@ section {
   top: 55vh;
   left: 6.5vw;
   margin: auto;
-  width: 17vw;
+  width: 0vw;
   height: 60vh;
   z-index: 11;
   background-color: $main-white;
-}
-
-//rectangles
-.s1-rectangle {
-  position: absolute;
-  opacity: 1;
-  z-index: 11;
-  bottom: 0;
+  opacity: 0;
 }
 
 
@@ -366,7 +216,7 @@ section {
   width: 100%;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
@@ -379,24 +229,21 @@ section {
   height: 100%;
 }
 
-
-
-.s2-rectangle {
-  position: absolute;
-  opacity: 0;
-  z-index: 10;
-  top: -50vh ;
-}
-
 .s2-p2 {
   width: 50vw;
   height: 100%;
+  background-color: $main-black;
+  right: 0vw;
+  top: 0;
+  position: absolute;
+  opacity: 0;
 }
 
 .intro-2 {
   top: 10vh;
   left: 6vw;
-  font-size: 10rem;
+  font-size: auto;
+  width: 38vw;
   position: absolute;
   color: #06080f;
   font-family: 'Inter', sans-serif;
@@ -418,208 +265,22 @@ section {
 @media (min-width: 576px) { 
   $rect-height: 2.5vw;
 
-  //rectangles
-  .s2-rectangle {
-    width: $rect-height;
-  }
-  #b1-s2 {
-    right: 6vw;
-    height: $rect-height*10;
-    width: $rect-height;
-    background-color: $main-blue;
-  }
-  
-  
-  #y1-s2 {
-    right: 6vw+$rect-height*2;
-    height: $rect-height*9;
-    width: $rect-height;
-    background-color: $main-yellow;
-  }
-  
-  #r1-s2 {
-    right: 6vw+$rect-height*4;
-    height: $rect-height*8;
-    width: $rect-height;
-    background-color: $main-red;
-  }
-  
-  #w1-s2 {
-    right: 6vw+$rect-height*6;
-    height: $rect-height*7;
-    width: $rect-height;
-    background-color: $main-black;
-  }
-  
-  #w2-s2 {
-    right: 6vw+$rect-height*8;
-    height: $rect-height*6;
-    width: $rect-height;
-    background-color: $main-black;
-  }
-  
-  #w3-s2 {
-    right: 6vw+$rect-height*10;
-    height: $rect-height*5;
-    width: $rect-height;
-    background-color: $main-black;
-  }
  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
   $rect-height: 2.5vw;
-
-  #b1-s2 {
-    right: 6vw;
-    height: $rect-height*10;
-    width: $rect-height;
-    background-color: $main-blue;
-  }
   
-  
-  #y1-s2 {
-    right: 6vw+$rect-height*2;
-    height: $rect-height*9;
-    width: $rect-height;
-    background-color: $main-yellow;
-  }
-  
-  #r1-s2 {
-    right: 6vw+$rect-height*4;
-    height: $rect-height*8;
-    width: $rect-height;
-    background-color: $main-red;
-  }
-  
-  #w1-s2 {
-    right: 6vw+$rect-height*6;
-    height: $rect-height*7;
-    width: $rect-height;
-    background-color: $main-black;
-  }
-  
-  #w2-s2 {
-    right: 6vw+$rect-height*8;
-    height: $rect-height*6;
-    width: $rect-height;
-    background-color: $main-black;
-  }
-  
-  #w3-s2 {
-    right: 6vw+$rect-height*10;
-    height: $rect-height*5;
-    width: $rect-height;
-    background-color: $main-black;
-  }
-  .picture-txt {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 1.3rem;
-    color: $main-black; 
-    width: 23vw;
-    position: absolute;
-    bottom: 19vh;
-    z-index: 20;
-    opacity: 0;
-  }
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
   $rect-height: 2.5vw;
-
-  #b1-s2 {
-    right: 6vw;
-    height: $rect-height*16;
-    width: $rect-height;
-    background-color: $main-blue;
-  }
-  
-  
-  #y1-s2 {
-    right: 6vw+$rect-height*2;
-    height: $rect-height*14;
-    width: $rect-height;
-    background-color: $main-yellow;
-  }
-  
-  #r1-s2 {
-    right: 6vw+$rect-height*4;
-    height: $rect-height*12;
-    width: $rect-height;
-    background-color: $main-red;
-  }
-  
-  #w1-s2 {
-    right: 6vw+$rect-height*6;
-    height: $rect-height*10;
-    width: $rect-height;
-    background-color: $main-black;
-  }
-  
-  #w2-s2 {
-    right: 6vw+$rect-height*8;
-    height: $rect-height*8;
-    width: $rect-height;
-    background-color: $main-black;
-  }
-  
-  #w3-s2 {
-    right: 6vw+$rect-height*10;
-    height: $rect-height*6;
-    width: $rect-height;
-    background-color: $main-black;
-  }
  }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-
 $rect-height: 2.5vw;
-#b1-s2 {
-  right: 6vw;
-  height: $rect-height*14;
-  width: $rect-height;
-  background-color: $main-blue;
-}
-
-
-#y1-s2 {
-  right: 6vw+$rect-height*2;
-  height: $rect-height*12;
-  width: $rect-height;
-  background-color: $main-yellow;
-}
-
-#r1-s2 {
-  right: 6vw+$rect-height*4;
-  height: $rect-height*10;
-  width: $rect-height;
-  background-color: $main-red;
-}
-
-#w1-s2 {
-  right: 6vw+$rect-height*6;
-  height: $rect-height*8;
-  width: $rect-height;
-  background-color: $main-black;
-}
-
-#w2-s2 {
-  right: 6vw+$rect-height*8;
-  height: $rect-height*6;
-  width: $rect-height;
-  background-color: $main-black;
-}
-
-#w3-s2 {
-  right: 6vw+$rect-height*10;
-  height: $rect-height*4;
-  width: $rect-height;
-  background-color: $main-black;
-}
-
 
 }
 
@@ -634,6 +295,7 @@ $rect-height: 2.5vw;
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  position: relative;
 }
 
 //section 4
@@ -647,6 +309,7 @@ $rect-height: 2.5vw;
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  position: relative;
 }
 
 //section 5
@@ -660,6 +323,41 @@ $rect-height: 2.5vw;
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  position: relative;
+}
+
+.s5-p1 {
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  height: 100%;
+  width: 50vw;
+  margin: auto;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Inter', sans-serif;
+  color: $main-white;
+}
+
+.s5-p1 a {
+  text-decoration: none;
+  color: $main-white;
+  font-size: 6vw;
+}
+.lets-connect {
+  font-size: 3vw;
+  writing-mode: vertical-lr;
+}
+.li-logo {
+  padding-left: 3vw;
+}
+.gh-logo {
+  padding-left: 6vw;
+}
+.fb-logo {
+  padding-left: 9vw;
 }
 
 //used for the observer API
