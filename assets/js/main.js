@@ -40,6 +40,8 @@ $(document).ready(function () {
   //section 4
   var section4Project = document.getElementsByClassName("s4-project1");
   var section4ProjectTop = document.getElementsByClassName("s4-project1-top");
+  var githubButton = document.getElementsByClassName("github");
+  var behanceButton = document.getElementsByClassName("behance");
 
   //
   //
@@ -176,10 +178,22 @@ $(document).ready(function () {
         { right: "2vw", opacity: "0" }
       );
       s4_t5
-        .fromTo(section4Project, 0.8, { height: "20%" }, { height: "100%" })
+        .fromTo(section4Project, 0.8, { top:"-5vh", height: "50%" }, { top:"0",height: "100%" })
         .fromTo(section4ProjectTop, 1, { opacity: "0" }, { opacity: "1" });
     }
   }
+
+
+  //section 4 clickable div links
+  $(".github").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
+
+  $(".behance").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
 
   //Observer API
   //runs the Animate() fn when section is being viewed

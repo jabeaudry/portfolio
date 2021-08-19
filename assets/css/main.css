@@ -15,7 +15,9 @@
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%; }
 
-.hvr-skew-forward:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active {
+.hvr-skew-forward:hover,
+.hvr-skew-forward:focus,
+.hvr-skew-forward:active {
   -webkit-transform: skew(-10deg);
   transform: skew(-10deg); }
 
@@ -33,7 +35,9 @@
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%; }
 
-.hvr-skew-backward:hover, .hvr-skew-backward:focus, .hvr-skew-backward:active {
+.hvr-skew-backward:hover,
+.hvr-skew-backward:focus,
+.hvr-skew-backward:active {
   -webkit-transform: skew(10deg);
   transform: skew(10deg); }
 
@@ -77,13 +81,15 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
 
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;
@@ -100,7 +106,7 @@ body {
   left: 0;
   overflow-x: hidden;
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.6;
   height: 100vh;
   width: 100%;
@@ -290,7 +296,7 @@ h1 {
 
 @media (min-width: 768px) {
   .picture-txt {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     text-align: center;
     font-size: 1.3rem;
     color: #06080f;
@@ -314,7 +320,8 @@ h1 {
     opacity: 0; } }
 
 section {
-  overflow: visible; }
+  overflow: visible;
+  scroll-snap-align: center; }
 
 #section1 {
   background-color: #06080f;
@@ -335,7 +342,7 @@ section {
 .s1-intro {
   width: 50%;
   color: #f5f5f5;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: justify;
   margin-left: -0.5vw;
   position: absolute;
@@ -347,12 +354,12 @@ section {
   transition: 0.3s; }
 
 .s1-intro:hover {
-  color: #FFA630; }
+  color: #ffa630; }
 
 .s1-intro-right {
   width: 50%;
   color: #06080f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: left;
   position: absolute;
   top: 8vh;
@@ -377,7 +384,7 @@ section {
   margin: auto;
   width: 37vw;
   color: #06080f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: left;
   position: absolute;
   top: 48vh;
@@ -444,13 +451,13 @@ section {
   width: 38vw;
   position: absolute;
   color: #06080f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   z-index: 1;
   text-align: left;
   margin-left: -0.5vw; }
 
 .intro-2:hover {
-  color: indigo;
+  color: blue;
   transition: 0.3s; }
 
 .s2-intro-right {
@@ -460,12 +467,12 @@ section {
   text-align: right;
   position: absolute;
   color: #f5f5f5;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   z-index: 1;
   font-size: 7vw; }
 
 .s2-intro-right:hover {
-  color: yellow;
+  color: #ffa630;
   transition: 0.3s; }
 
 .my-picture2 {
@@ -484,7 +491,7 @@ section {
   height: 30vh;
   width: 38vw;
   color: #06080f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.4vw;
   position: absolute; }
 
@@ -514,7 +521,7 @@ section {
   top: 36vh;
   height: 58vh;
   width: 38vw;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -699,6 +706,81 @@ section {
   margin: auto;
   position: absolute; }
 
+.section4-picture-container {
+  height: 40vh;
+  width: 50vw;
+  top: 15vh;
+  left: 0;
+  position: relative;
+  border-right: 1px solid #f5f5f5;
+  margin-right: 5vw; }
+
+.section4-project {
+  height: 40vh;
+  right: 5vw;
+  margin: auto;
+  width: auto;
+  position: absolute; }
+
+.section4-description-container {
+  width: 37vw;
+  left: 55vw;
+  height: 25vh;
+  top: 22.5vh;
+  position: absolute;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.section4-description-title a {
+  font-size: 3vw;
+  color: #f5f5f5;
+  text-decoration: underline; }
+
+.section4-description-text {
+  font-size: 1.2vw; }
+
+.github {
+  border-right: 3px solid #06080f;
+  left: 0;
+  font-size: 8vw;
+  position: absolute;
+  text-align: center;
+  line-height: 30vh;
+  height: 30vh;
+  bottom: 0;
+  width: 50vw;
+  color: #06080f;
+  border-top: 6px solid #06080f;
+  cursor: pointer; }
+
+.github:hover {
+  color: blue;
+  background-color: #06080f;
+  border-top: 1.5px solid #f5f5f5;
+  transition-duration: 400ms; }
+
+.behance {
+  right: 0;
+  font-size: 8vw;
+  position: absolute;
+  height: 30vh;
+  line-height: 30vh;
+  border-left: 3px solid #06080f;
+  bottom: 0;
+  width: 50vw;
+  text-align: center;
+  color: #06080f;
+  border-top: 6px solid #06080f;
+  cursor: pointer; }
+
+.behance:hover {
+  color: blue;
+  background-color: #06080f;
+  border-top: 1.5px solid #f5f5f5;
+  transition-duration: 400ms; }
+
 #section5 {
   background-color: #06080f;
   width: 100%;
@@ -720,7 +802,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #f5f5f5; }
 
 .s5-p1 a {
@@ -732,21 +814,21 @@ section {
   transition: 0.3s; }
 
 .li-logo :hover {
-  color: #ffb800; }
+  color: blue; }
 
 .gh-logo {
   padding-left: 3vw;
   transition: 0.3s; }
 
 .gh-logo :hover {
-  color: #cc2936; }
+  color: blue; }
 
 .fb-logo {
   padding-left: 9vw;
   transition: 0.3s; }
 
 .fb-logo :hover {
-  color: #2364aa; }
+  color: blue; }
 
 @media (min-width: 200px) {
   .s5-p1 a {
