@@ -164,6 +164,7 @@ $(document).ready(function () {
       s4_t1 = new TimelineMax();
       s4_t2 = new TimelineMax();
       s4_t5 = new TimelineMax();
+      s4_t6 = new TimelineMax();
 
       s4_t1.fromTo(
         s3p1,
@@ -177,9 +178,9 @@ $(document).ready(function () {
         { right: "6vw", opacity: "1" },
         { right: "2vw", opacity: "0" }
       );
-      s4_t5
-        .fromTo(section4Project, 0.8, { top:"-5vh", height: "50%" }, { top:"0",height: "100%" })
-        .fromTo(section4ProjectTop, 1, { opacity: "0" }, { opacity: "1" });
+      s4_t5.fromTo(section4Project, 0.8, { top:"-5vh", height: "50%" }, { top:"0",height: "100%" });
+      s4_t6.fromTo(section4ProjectTop, 0.5, { opacity: "0" }, { opacity: "0" })
+      .fromTo(section4ProjectTop, 0.8, { opacity: "0" }, { opacity: "1" });
     }
   }
 
