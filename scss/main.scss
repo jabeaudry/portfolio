@@ -209,7 +209,7 @@ section {
 //
 
 #section1 {
-  background-color: $main-black;
+  background-color: $main-white;
   width: 100vw;
   height: 100vh;
   z-index: 2;
@@ -322,20 +322,45 @@ section {
 //section 1 responsive
 @media (min-width: 200px) {
   .s1-intro-right {
-    top: 14vh;
-    font-size: 10.5vw;
+    top: 55vh;
+    font-size: 42vw;
+    left: 45%;
+    color: $main-white;
   }
   .s1-intro {
-    top: 14vh;
-    font-size: 10.5vw;
+    top: 37vh;
+    font-size: 20vw;
+    color: $main-white;
+    left: 5vw;
   }
   .s1-sub-intro {
     font-size: 4vw;
-    top: 35vh;
+    top: 105vh;
+    width: 80%;
+    left: 6vw;
   }
   .my-picture {
     top: 62vh;
     width: 35vw;
+  }
+  #section1 {
+    height: 150vh;
+    flex-direction: column;
+    scroll-snap-align: none;
+  }
+  .s1-p1 {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: $main-black;
+    scroll-snap-align: start;
+  }
+  .s1-p2 {
+    width: 100vw;
+    height: 50vh;
+    top: 100vh;
+    left: 0;
+    scroll-snap-align: end;
   }
 }
 
