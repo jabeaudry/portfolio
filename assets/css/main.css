@@ -407,27 +407,35 @@ section {
   background-color: #f5f5f5;
   opacity: 0; }
 
+.s1-top-white-square {
+  height: 0vh; }
+
 @media (min-width: 200px) {
   .s1-intro-right {
-    top: 55vh;
+    top: 65vh;
     font-size: 42vw;
     left: 45%;
-    color: #f5f5f5; }
+    color: #f5f5f5;
+    position: absolute;
+    width: auto;
+    padding-bottom: 3vh; }
   .s1-intro {
-    top: 37vh;
+    top: 48vh;
     font-size: 20vw;
     color: #f5f5f5;
     left: 5vw; }
   .s1-sub-intro {
-    font-size: 4vw;
-    top: 105vh;
+    font-size: 5vw;
+    bottom: -40%;
     width: 80%;
-    left: 6vw; }
+    left: 6vw;
+    text-align: right;
+    height: 40vh; }
   .my-picture {
-    top: 62vh;
+    top: 73vh;
     width: 35vw; }
   #section1 {
-    height: 150vh;
+    height: 160vh;
     flex-direction: column;
     scroll-snap-align: none; }
   .s1-p1 {
@@ -438,10 +446,12 @@ section {
     scroll-snap-align: start; }
   .s1-p2 {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     top: 100vh;
     left: 0;
-    scroll-snap-align: end; } }
+    scroll-snap-align: end; }
+  .picture-background {
+    height: 29vh; } }
 
 #section2 {
   background-color: #f5f5f5;

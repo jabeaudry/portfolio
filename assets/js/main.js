@@ -76,13 +76,13 @@ $(document).ready(function () {
       s1_t20 = new TimelineMax();
 
       //animation of rectangles
-      if (window.innerWidth <= 576) {
+      if (window.innerWidth <= 576) {   //phone
         s1_t7
         .fromTo(
           picBackground,
           0.4,
           { width: "0vw", top: "100vh", opacity: "0" },
-          { opacity: "0.2", width: "1vw", top: "60vh", ease: Power2.EaseInOut }
+          { opacity: "0.2", width: "1vw", top: "71vh", ease: Power2.EaseInOut }
         )
         .fromTo(
           picBackground,
@@ -91,7 +91,10 @@ $(document).ready(function () {
           { opacity: "1", width: "37vw", ease: Power2.EaseInOut }
         )
         .fromTo(myPic, 0.81, { opacity: "0" }, { opacity: "1" });
-      }
+      $(".s1-intro-right").appendTo(".s1-p1");
+      console.log("cellphone");
+    }
+      
       else {
       s1_t7
         .fromTo(
@@ -107,6 +110,7 @@ $(document).ready(function () {
           { opacity: "1", width: "21vw", ease: Power2.EaseInOut }
         )
         .fromTo(myPic, 0.81, { opacity: "0" }, { opacity: "1" });
+      $(".s1-intro-right").appendTo(".s1-p2");
       }
       s1_t20.fromTo(menuIcon, 0.5, { stroke: white }, { stroke: black });
       s1_t3.fromTo(s2p2, 1.9, { opacity: "1" }, { opacity: "1" });
