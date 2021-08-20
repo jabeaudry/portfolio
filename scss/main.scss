@@ -1,6 +1,7 @@
 //font
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Antic+Slab&family=Domine&family=Merriweather:wght@300&display=swap");
 //color scheme
 $main-black: #06080f;
 $main-white: #f5f5f5;
@@ -166,19 +167,6 @@ a {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   $rect-height: 2.5vw;
-
-  .picture-txt {
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    font-size: 1.3rem;
-    color: $main-black;
-    width: 23vw;
-    position: absolute;
-    bottom: 19vh;
-    z-index: 20;
-    opacity: 0;
-    font-weight: bold;
-  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -212,10 +200,17 @@ section {
   scroll-snap-align: center;
 }
 
+//
+//
+//
 //section 1
+//
+//
+//
+
 #section1 {
   background-color: $main-black;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 2;
   scroll-snap-align: center;
@@ -234,7 +229,7 @@ section {
 .s1-intro {
   width: 50%;
   color: $main-white;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", serif;
   text-align: justify;
   margin-left: -0.5vw;
   position: absolute;
@@ -246,13 +241,13 @@ section {
   transition: 0.3s;
 }
 .s1-intro:hover {
-  color: $main-orange;
+  color: blue;
 }
 
 .s1-intro-right {
   width: 50%;
   color: $main-black;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", serif;
   text-align: left;
   position: absolute;
   top: 8vh;
@@ -281,7 +276,7 @@ section {
   margin: auto;
   width: 37vw;
   color: $main-black;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", sans-serif;
   text-align: left;
   position: absolute;
   top: 48vh;
@@ -324,10 +319,37 @@ section {
   opacity: 0;
 }
 
+//section 1 responsive
+@media (min-width: 200px) {
+  .s1-intro-right {
+    top: 14vh;
+    font-size: 10.5vw;
+  }
+  .s1-intro {
+    top: 14vh;
+    font-size: 10.5vw;
+  }
+  .s1-sub-intro {
+    font-size: 4vw;
+    top: 35vh;
+  }
+  .my-picture {
+    top: 62vh;
+    width: 35vw;
+  }
+}
+
+//
+//
+//
 //section 2
+//
+//
+//
+
 #section2 {
   background-color: $main-white;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 2;
   scroll-snap-align: center;
@@ -384,7 +406,7 @@ section {
 }
 
 .s2-intro-right:hover {
-  color: $main-orange;
+  color: blue;
   transition: 0.3s;
 }
 
@@ -406,7 +428,7 @@ section {
   height: 30vh;
   width: 38vw;
   color: $main-black;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 1.4vw;
   //display: flex;
   //flex-direction: column;
@@ -506,10 +528,19 @@ section {
   $rect-height: 2.5vw;
 }
 
+//
+//
+//
+//
 //section 3
+//
+//
+//
+//
+
 #section3 {
   background-color: $main-black;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 2;
   scroll-snap-align: start;
@@ -518,6 +549,7 @@ section {
   flex-direction: row;
   align-items: stretch;
   position: relative;
+  font-family: "inter", sans-serif;
 }
 
 .s3-p1 {
@@ -628,10 +660,19 @@ section {
   font-size: 1vw;
 }
 
+//
+//
+//
+//
 //section 4
+//
+//
+//
+//
+
 #section4 {
   background-color: $main-white;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 2;
   scroll-snap-align: start;
@@ -646,15 +687,15 @@ section {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   position: absolute;
 }
 
 .s4-p2 {
-  top: 70vh;
+  top: 80vh;
   left: 0;
   width: 100vw;
-  height: 30vh;
+  height: 20vh;
   position: absolute;
 }
 
@@ -677,9 +718,9 @@ section {
 }
 
 .section4-picture-container {
-  height: 40vh;
+  height: 43vh;
   width: 50vw;
-  top: 15vh;
+  top: 17.5vh;
   left: 0;
   position: relative;
   border-right: 1px solid $main-white;
@@ -687,7 +728,7 @@ section {
 }
 
 .section4-project {
-  height: 40vh;
+  height: 43vh;
   right: 5vw;
   margin: auto;
   width: auto;
@@ -698,7 +739,7 @@ section {
   width: 37vw;
   left: 55vw;
   height: 25vh;
-  top: 22.5vh;
+  top: 24vh;
   position: absolute;
   color: $main-white;
   display: flex;
@@ -719,11 +760,11 @@ section {
 .github {
   border-right: 3px solid $main-black;
   left: 0;
-  font-size: 8vw;
+  font-size: 6.5vw;
   position: absolute;
   text-align: center;
-  line-height: 30vh;
-  height: 30vh;
+  line-height: 20vh;
+  height: 20vh;
   bottom: 0;
   width: 50vw;
   color: $main-black;
@@ -740,10 +781,10 @@ section {
 
 .behance {
   right: 0;
-  font-size: 8vw;
+  font-size: 6.5vw;
   position: absolute;
-  height: 30vh;
-  line-height: 30vh;
+  height: 20vh;
+  line-height: 20vh;
   border-left: 3px solid $main-black;
   bottom: 0;
   width: 50vw;
@@ -760,10 +801,19 @@ section {
   transition-duration: 400ms;
 }
 
+//
+//
+//
+//
 //section 5
+//
+//
+//
+//
+
 #section5 {
   background-color: $main-black;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 2;
   scroll-snap-align: start;

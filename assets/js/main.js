@@ -76,7 +76,23 @@ $(document).ready(function () {
       s1_t20 = new TimelineMax();
 
       //animation of rectangles
-
+      if (window.innerWidth <= 576) {
+        s1_t7
+        .fromTo(
+          picBackground,
+          0.4,
+          { width: "0vw", top: "100vh", opacity: "0" },
+          { opacity: "0.2", width: "1vw", top: "60vh", ease: Power2.EaseInOut }
+        )
+        .fromTo(
+          picBackground,
+          0.4,
+          { opacity: "0.2", width: "1vw" },
+          { opacity: "1", width: "37vw", ease: Power2.EaseInOut }
+        )
+        .fromTo(myPic, 0.81, { opacity: "0" }, { opacity: "1" });
+      }
+      else {
       s1_t7
         .fromTo(
           picBackground,
@@ -91,9 +107,13 @@ $(document).ready(function () {
           { opacity: "1", width: "21vw", ease: Power2.EaseInOut }
         )
         .fromTo(myPic, 0.81, { opacity: "0" }, { opacity: "1" });
+      }
       s1_t20.fromTo(menuIcon, 0.5, { stroke: white }, { stroke: black });
       s1_t3.fromTo(s2p2, 1.9, { opacity: "1" }, { opacity: "1" });
       console.log("1");
+
+      
+
 
       //section 2 animation
     }
@@ -157,7 +177,7 @@ $(document).ready(function () {
         { right: "2vw", opacity: "0" },
         { right: "6vw", opacity: "1" }
       );
-      s3_t3.fromTo(section4Project, 1, { top: "0" }, { top: "-5vh" });
+      s3_t3.fromTo(section4Project, 1, { top: "0" }, { top: "0" });
     }
 
     if (selection == "section4") {
