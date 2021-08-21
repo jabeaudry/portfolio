@@ -819,6 +819,8 @@ section {
   background-color: $main-black;
   margin: auto;
   position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .s4-project1-top {
@@ -832,7 +834,7 @@ section {
 
 .section4-picture-container {
   height: 43vh;
-  width: 50vw;
+  width: 90vw;
   top: 17.5vh;
   left: 0;
   position: relative;

@@ -784,7 +784,9 @@ section {
   top: 0;
   background-color: #06080f;
   margin: auto;
-  position: absolute; }
+  position: absolute;
+  display: flex;
+  flex-direction: column; }
 
 .s4-project1-top {
   height: 90%;
@@ -796,7 +798,7 @@ section {
 
 .section4-picture-container {
   height: 43vh;
-  width: 50vw;
+  width: 90vw;
   top: 17.5vh;
   left: 0;
   position: relative;
