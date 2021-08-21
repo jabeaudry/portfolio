@@ -324,16 +324,22 @@ section {
 //section 1 responsive
 @media (min-width: 200px) {
   .s1-intro-right {
-    top: 65vh;
+    top: 67vh;
     font-size: 42vw;
-    left: 45%;
+    left: 48%;
     color: $main-white;
     position: absolute;
     width: auto;
     padding-bottom: 3vh;
   }
+  .s1-intro-right:hover {
+    color: $main-white;
+  }
+  .s1-intro:hover {
+    color: $main-white;
+  }
   .s1-intro {
-    top: 48vh;
+    top: 46vh;
     font-size: 20vw;
     color: $main-white;
     left: 5vw;
@@ -351,7 +357,7 @@ section {
     width: 35vw;
   }
   #section1 {
-    height: 160vh;
+    height: 165vh;
     flex-direction: column;
     scroll-snap-align: none;
   }
@@ -364,7 +370,7 @@ section {
   }
   .s1-p2 {
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
     top: 100vh;
     left: 0;
     scroll-snap-align: end;
@@ -541,6 +547,78 @@ section {
 
 .lead-position {
   font-size: 1.2vw;
+}
+
+@media (min-width: 200px) {
+  #section2 {
+    height: 200vh;
+    flex-direction: column;
+    scroll-snap-align: none;
+  }
+  .s2-p1 {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: $main-white;
+    scroll-snap-align: start;
+  }
+  .s2-p2 {
+    width: 100vw;
+    height: 100vh;
+    top: 100vh;
+    left: 0;
+    scroll-snap-align: end;
+  }
+
+  .intro-2 {
+    font-size: 14vw;
+  }
+
+  .work-container {
+    font-size: 4vw;
+    top: 40vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    padding-left: 1.5vw;
+  }
+
+  .work-logo-1 {
+    margin-left: -0.5vw;
+  }
+  .work-company-years {
+    font-size: 4vw;
+  }
+
+  .work-company-name a {
+    font-size: 5vw;
+  }
+
+  .education-container {
+    top: 36vh;
+    width: 90%;
+    padding-right: 2vw;
+  }
+
+  .s2-intro-right {
+    font-size: 14vw;
+    width: 90vw;
+    padding-right: 2vw;
+  }
+
+  .school-year {
+    font-size: 4vw;
+  }
+
+  .school-name a {
+    font-size: 5vw;
+  }
+
+  .school {
+    font-size: 4vw;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -836,6 +914,32 @@ section {
   transition-duration: 400ms;
 }
 
+//phone
+@media (min-width: 500px) {
+  .section4-description-container {
+    left: 8vw;
+    top: 48vh;
+    width: 70vw;
+    height: 25vh;
+  }
+  .section4-project {
+    height: 25vh;
+    left: 5vw;
+  }
+
+  .section4-picture-container {
+    height: 25vh;
+    width: 88vw;
+  }
+
+  .section4-description-text {
+    font-size: 4vw;
+  }
+  .section4-description-title a {
+    font-size: 7vw;
+  }
+}
+
 //
 //
 //
@@ -969,4 +1073,8 @@ section {
 .dot.s2-dot {
   top: 1vh;
   left: 2vh;
+}
+
+.dot.dot-section-1 {
+  bottom: 75vh;
 }

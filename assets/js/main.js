@@ -50,12 +50,15 @@ $(document).ready(function () {
   //
 
   AOS.init(); //js scroll animation library
-
   //closes the navbar when you click on a link
   $(".nav-link").on("click", function () {
     var check = $(".main-navigation-toggle");
     check.prop("checked", !check.prop("checked"));
   });
+
+  //section 1 animation
+  //removes "bonjour" when the user scrolls down
+ 
 
   //animate()
   //animates the different sections
@@ -91,8 +94,9 @@ $(document).ready(function () {
           { opacity: "1", width: "37vw", ease: Power2.EaseInOut }
         )
         .fromTo(myPic, 0.81, { opacity: "0" }, { opacity: "1" });
-      $(".s1-intro-right").appendTo(".s1-p1");
-      console.log("cellphone");
+        $(".s1-intro-right").appendTo(".s1-p1");
+        console.log("cellphone");
+        ($(".s1-intro")).css("opacity","1");
     }
       
       else {
@@ -111,8 +115,9 @@ $(document).ready(function () {
         )
         .fromTo(myPic, 0.81, { opacity: "0" }, { opacity: "1" });
       $(".s1-intro-right").appendTo(".s1-p2");
-      }
+      
       s1_t20.fromTo(menuIcon, 0.5, { stroke: white }, { stroke: black });
+      }
       s1_t3.fromTo(s2p2, 1.9, { opacity: "1" }, { opacity: "1" });
       console.log("1");
 
@@ -123,7 +128,7 @@ $(document).ready(function () {
     }
     else if (selection == "section2") {
       //time variables
-
+      
       s1_t8 = new TimelineMax();
       s1_t9 = new TimelineMax();
       s1_t10 = new TimelineMax();
@@ -162,7 +167,12 @@ $(document).ready(function () {
       s2_t20
         .fromTo(menuIcon, 0.5, { stroke: black }, { stroke: white })
         .fromTo(picBackground, 0.3, { opacity: "1" }, { opacity: "0" });
-    }
+    
+      if (window.innerWidth <= 576) {   //phone
+          ($(".s1-intro")).css("opacity","0");
+       }
+    
+      }
 
     else if (selection == "section3") {
       s3_t1 = new TimelineMax();
@@ -220,10 +230,14 @@ $(document).ready(function () {
     return false;
   });
 
+
+
+
   //Observer API
   //runs the Animate() fn when section is being viewed
   const sectionViewed = document.querySelectorAll(".dot");
   var previous;
+
 
   observer = new IntersectionObserver(
     (entries) => {
@@ -243,8 +257,21 @@ $(document).ready(function () {
     { threshold: 1 }
   );
 
+
+  
   //runs through the array of sections
   sectionViewed.forEach((image) => {
     observer.observe(image);
   });
+
+
+
+  //first window only (phone)
+  
+
 });
+
+   
+ 
+  
+
