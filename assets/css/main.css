@@ -636,7 +636,7 @@ section {
   .s2-intro-right {
     font-size: 14vw;
     width: 90vw;
-    padding-right: 2vw; }
+    padding-right: 1vw; }
   .school-year {
     font-size: 4vw; }
   .school-name a {
@@ -784,9 +784,7 @@ section {
   top: 0;
   background-color: #06080f;
   margin: auto;
-  position: absolute;
-  display: flex;
-  flex-direction: column; }
+  position: absolute; }
 
 .s4-project1-top {
   height: 90%;
@@ -798,7 +796,7 @@ section {
 
 .section4-picture-container {
   height: 43vh;
-  width: 90vw;
+  width: 50vw;
   top: 17.5vh;
   left: 0;
   position: relative;
@@ -876,7 +874,8 @@ section {
     left: 8vw;
     top: 48vh;
     width: 70vw;
-    height: 25vh; }
+    height: 25vh;
+    position: absolute; }
   .section4-project {
     height: 25vh;
     left: 5vw; }

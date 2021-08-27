@@ -605,7 +605,7 @@ section {
   .s2-intro-right {
     font-size: 14vw;
     width: 90vw;
-    padding-right: 2vw;
+    padding-right: 1vw;
   }
 
   .school-year {
@@ -819,8 +819,6 @@ section {
   background-color: $main-black;
   margin: auto;
   position: absolute;
-  display: flex;
-  flex-direction: column;
 }
 
 .s4-project1-top {
@@ -834,7 +832,7 @@ section {
 
 .section4-picture-container {
   height: 43vh;
-  width: 90vw;
+  width: 50vw;
   top: 17.5vh;
   left: 0;
   position: relative;
@@ -923,6 +921,7 @@ section {
     top: 48vh;
     width: 70vw;
     height: 25vh;
+    position: absolute;
   }
   .section4-project {
     height: 25vh;
