@@ -13,6 +13,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "hover.css": "^2.3.2",
-    "jquery-visible": "^1.2.0"
+    "http-server": "^13.0.1",
+    "jquery-visible": "^1.2.0",
+    "node-sass": "^6.0.1"
   }
 }

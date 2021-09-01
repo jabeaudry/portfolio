@@ -80,23 +80,7 @@ $(document).ready(function () {
 
       //animation of rectangles
       if (window.innerWidth <= 576) {   //phone
-        s1_t7
-        .fromTo(
-          picBackground,
-          0.4,
-          { width: "0vw", top: "100vh", opacity: "0" },
-          { opacity: "0.2", width: "1vw", top: "71vh", ease: Power2.EaseInOut }
-        )
-        .fromTo(
-          picBackground,
-          0.4,
-          { opacity: "0.2", width: "1vw" },
-          { opacity: "1", width: "37vw", ease: Power2.EaseInOut }
-        )
-        .fromTo(myPic, 0.81, { opacity: "0" }, { opacity: "1" });
-        $(".s1-intro-right").appendTo(".s1-p1");
-        console.log("cellphone");
-        ($(".s1-intro")).css("opacity","1");
+        return;
     }
       
       else {
@@ -138,6 +122,19 @@ $(document).ready(function () {
       s1_t14 = new TimelineMax();
       s2_t20 = new TimelineMax();
 
+
+      if (window.innerWidth <= 576) {   //phone
+       return;
+
+      }
+      else {
+        s1_t13.fromTo(
+          intro2pt2,
+          1,
+          { opacity: "0", top: "13vh" },
+          { opacity: "1", top: "8vh" }
+        );
+      }
       s1_t10.fromTo(
         s3p1,
         1,
@@ -156,21 +153,13 @@ $(document).ready(function () {
         { opacity: "0", top: "29vh" },
         { opacity: "1", top: "37vh" }
       );
-      s1_t13.fromTo(
-        intro2pt2,
-        1,
-        { opacity: "0", top: "13vh" },
-        { opacity: "1", top: "8vh" }
-      );
       s1_t8.fromTo(s2p2, 0.9, { opacity: "1" }, { opacity: "1" });
       console.log("2");
       s2_t20
         .fromTo(menuIcon, 0.5, { stroke: black }, { stroke: white })
         .fromTo(picBackground, 0.3, { opacity: "1" }, { opacity: "0" });
     
-      if (window.innerWidth <= 576) {   //phone
-          ($(".s1-intro")).css("opacity","0");
-       }
+      
     
       }
 
@@ -178,7 +167,10 @@ $(document).ready(function () {
       s3_t1 = new TimelineMax();
       s3_t2 = new TimelineMax();
       s3_t3 = new TimelineMax();
-
+      if (window.innerWidth <= 576) {   //phone
+        return;
+      }
+      else{
       s3_t1.fromTo(
         s3p1,
         1,
@@ -191,8 +183,10 @@ $(document).ready(function () {
         { right: "2vw", opacity: "0" },
         { right: "6vw", opacity: "1" }
       );
-      s3_t3.fromTo(section4Project, 1, { top: "0" }, { top: "0" });
+      s3_t3.fromTo(section4Project, 1, { top: "0" }, { top: "0" })
+      .fromTo(section4ProjectTop, 0.1, { opacity: "1" }, { opacity: "0" });
     }
+  }
 
     if (selection == "section4") {
       s4_t1 = new TimelineMax();
@@ -200,6 +194,11 @@ $(document).ready(function () {
       s4_t5 = new TimelineMax();
       s4_t6 = new TimelineMax();
 
+
+      if (window.innerWidth <= 576) {   //phone
+        return;
+      }
+      else{
       s4_t1.fromTo(
         s3p1,
         1,
@@ -215,6 +214,16 @@ $(document).ready(function () {
       s4_t5.fromTo(section4Project, 0.8, { top:"-5vh", height: "50%" }, { top:"0",height: "100%" });
       s4_t6.fromTo(section4ProjectTop, 0.5, { opacity: "0" }, { opacity: "0" })
       .fromTo(section4ProjectTop, 0.8, { opacity: "0" }, { opacity: "1" });
+      }
+    }
+    if (selection == "section5") {
+      s5_t1 = new TimelineMax();
+      if (window.innerWidth <= 576) {   //phone
+        return;
+      }
+      else{
+        s5_t1.fromTo(section4ProjectTop, 0.2, { opacity: "1" }, { opacity: "0" });
+      }
     }
   }
 

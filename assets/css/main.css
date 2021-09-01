@@ -325,7 +325,8 @@ section {
 
 .s1-p1 {
   width: 50vw;
-  height: 100vh; }
+  height: 100vh;
+  background-color: #06080f; }
 
 .s1-intro {
   width: 50%;
@@ -410,7 +411,7 @@ section {
 .s1-top-white-square {
   height: 0vh; }
 
-@media (min-width: 200px) {
+@media only screen and (max-width: 512px) and (min-width: 0px) {
   .s1-intro-right {
     top: 67vh;
     font-size: 42vw;
@@ -436,10 +437,11 @@ section {
     text-align: right;
     height: 40vh; }
   .my-picture {
-    top: 73vh;
-    width: 35vw; }
+    top: 77vh;
+    width: 35vw;
+    opacity: 1; }
   #section1 {
-    height: 165vh;
+    height: 160vh;
     flex-direction: column;
     scroll-snap-align: none; }
   .s1-p1 {
@@ -450,12 +452,15 @@ section {
     scroll-snap-align: start; }
   .s1-p2 {
     width: 100vw;
-    height: 65vh;
+    height: 60vh;
     top: 100vh;
     left: 0;
     scroll-snap-align: end; }
   .picture-background {
-    height: 29vh; } }
+    height: 25vh;
+    width: 37vw;
+    opacity: 1;
+    bottom: 40vh; } }
 
 #section2 {
   background-color: #f5f5f5;
@@ -480,10 +485,11 @@ section {
   right: 0vw;
   top: 0;
   position: absolute;
-  opacity: 0; }
+  opacity: 1;
+  z-index: 120; }
 
 .intro-2 {
-  top: 25vh;
+  top: 36vh;
   left: 6vw;
   font-size: 7vw;
   width: 38vw;
@@ -499,7 +505,7 @@ section {
   transition: 0.3s; }
 
 .s2-intro-right {
-  top: 2vh;
+  top: 30vh;
   right: 6vw;
   width: 38vw;
   text-align: right;
@@ -595,7 +601,13 @@ section {
 .lead-position {
   font-size: 1.2vw; }
 
-@media (min-width: 200px) {
+.top-rectangle {
+  height: 0vh;
+  weight: 0vw;
+  top: 0;
+  margin: auto; }
+
+@media only screen and (max-width: 512px) and (min-width: 0px) {
   #section2 {
     height: 200vh;
     flex-direction: column;
@@ -605,13 +617,16 @@ section {
     height: 100vh;
     top: 0;
     background-color: #f5f5f5;
-    scroll-snap-align: start; }
+    scroll-snap-align: start;
+    scroll-snap-stop: always; }
   .s2-p2 {
     width: 100vw;
     height: 100vh;
     top: 100vh;
     left: 0;
-    scroll-snap-align: end; }
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: #06080f; }
   .intro-2 {
     font-size: 14vw; }
   .work-container {
@@ -630,9 +645,18 @@ section {
   .work-company-name a {
     font-size: 5vw; }
   .education-container {
-    top: 36vh;
+    top: 50vh;
     width: 90%;
     padding-right: 2vw; }
+  .top-rectangle {
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: #06080f;
+    z-index: 100;
+    position: absolute; }
   .s2-intro-right {
     font-size: 14vw;
     width: 90vw;
@@ -752,6 +776,38 @@ section {
   background-color: rgba(0, 0, 0, 0.85);
   font-size: 1vw; }
 
+@media only screen and (max-width: 512px) and (min-width: 0px) {
+  #section3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #06080f;
+    scroll-snap-align: center;
+    scroll-snap-stop: always; }
+  .s3-p2 {
+    height: 38vh;
+    opacity: 1;
+    top: 50vh;
+    width: 84vw;
+    left: 8vw;
+    margin-top: 2vh;
+    margin-bottom: 10vh; }
+  .s3-p1 {
+    height: 38vh;
+    opacity: 1;
+    top: 0vh;
+    width: 84vw;
+    left: 8vw;
+    margin-top: 10vh;
+    margin-bottom: 2vh; }
+  .project-title a {
+    font-size: 5vw; }
+  .project-description {
+    height: 80%;
+    top: 10%; }
+  .project-description#project1 {
+    height: 80%;
+    top: 10%; } }
+
 #section4 {
   background-color: #f5f5f5;
   width: 100vw;
@@ -792,7 +848,8 @@ section {
   top: 0;
   background-color: #06080f;
   margin: auto;
-  position: absolute; }
+  position: absolute;
+  opacity: 0; }
 
 .section4-picture-container {
   height: 43vh;
@@ -869,7 +926,7 @@ section {
   border-top: 1.5px solid #f5f5f5;
   transition-duration: 400ms; }
 
-@media (min-width: 500px) {
+@media only screen and (max-width: 512px) and (min-width: 0px) {
   .section4-description-container {
     left: 8vw;
     top: 48vh;
@@ -878,14 +935,21 @@ section {
     position: absolute; }
   .section4-project {
     height: 25vh;
-    left: 5vw; }
+    left: 5vw;
+    opacity: 1; }
+  .s4-project1-top {
+    opacity: 1;
+    height: 80vh; }
   .section4-picture-container {
     height: 25vh;
     width: 88vw; }
   .section4-description-text {
     font-size: 4vw; }
   .section4-description-title a {
-    font-size: 7vw; } }
+    font-size: 7vw; }
+  .dot.s2-dot.dot-when-mobile {
+    left: 3vw;
+    top: -250vh; } }
 
 #section5 {
   background-color: #06080f;
@@ -936,7 +1000,7 @@ section {
 .fb-logo :hover {
   color: blue; }
 
-@media (min-width: 200px) {
+@media (min-width: 300px) {
   .s5-p1 a {
     font-size: 10vw; }
   .lets-connect {
@@ -980,10 +1044,6 @@ section {
   bottom: 1vh;
   right: 2vh;
   z-index: 30; }
-
-.dot.s2-dot {
-  top: 1vh;
-  left: 2vh; }
 
 .dot.dot-section-1 {
   bottom: 75vh; }
