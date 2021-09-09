@@ -295,6 +295,28 @@ h1 {
   50%, 100% {
     transform: translateY(0); } }
 
+@media only screen and (max-width: 512px) and (min-width: 0px) {
+  .icon--menu {
+    stroke: #55555f; }
+  .main-navigation-toggle {
+    position: fixed;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; }
+    .main-navigation-toggle + label {
+      position: fixed;
+      top: calc(var(--space) * 1.2);
+      right: calc(var(--space) * 1);
+      cursor: pointer;
+      z-index: 401; } }
+
+@media only screen and (max-width: 512px) and (min-width: 0px) {
+  html {
+    scroll-snap-type: none;
+    scroll-behavior: none; } }
+
 @media (min-width: 1400px) {
   .picture-txt {
     font-family: monospace;
@@ -411,11 +433,29 @@ section {
 .s1-top-white-square {
   height: 0vh; }
 
+.s1-arrow {
+  position: absolute;
+  top: 8vh;
+  width: 6vh;
+  height: auto;
+  left: 47vw;
+  opacity: 0;
+  z-index: -10; }
+
 @media only screen and (max-width: 512px) and (min-width: 0px) {
+  .s1-arrow {
+    position: absolute;
+    top: 8vh;
+    width: 6vh;
+    height: auto;
+    left: 47vw;
+    opacity: 1;
+    z-index: 100; }
   .s1-intro-right {
-    top: 67vh;
+    bottom: 66vh;
+    top: unset;
     font-size: 42vw;
-    left: 48%;
+    right: calc(var(--space) * 3);
     color: #f5f5f5;
     position: absolute;
     width: auto;
@@ -425,7 +465,7 @@ section {
   .s1-intro:hover {
     color: #f5f5f5; }
   .s1-intro {
-    top: 46vh;
+    top: 41vh;
     font-size: 20vw;
     color: #f5f5f5;
     left: 5vw; }
@@ -433,20 +473,22 @@ section {
     font-size: 5vw;
     bottom: -40%;
     width: 80%;
-    left: 6vw;
-    text-align: right;
+    left: 6.5vw;
+    right: unset;
+    text-align: left;
     height: 40vh; }
   .my-picture {
-    top: 77vh;
+    top: 62vh;
     width: 35vw;
     opacity: 1; }
   #section1 {
-    height: 160vh;
+    height: 145vh;
     flex-direction: column;
-    scroll-snap-align: none; }
+    scroll-snap-align: none;
+    scroll-snap-stop: none; }
   .s1-p1 {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     top: 0;
     background-color: #06080f;
     scroll-snap-align: start; }
@@ -460,7 +502,7 @@ section {
     height: 25vh;
     width: 37vw;
     opacity: 1;
-    bottom: 40vh; } }
+    bottom: 55vh; } }
 
 #section2 {
   background-color: #f5f5f5;
@@ -489,7 +531,7 @@ section {
   z-index: 120; }
 
 .intro-2 {
-  top: 36vh;
+  top: 35vh;
   left: 6vw;
   font-size: 7vw;
   width: 38vw;
@@ -505,7 +547,7 @@ section {
   transition: 0.3s; }
 
 .s2-intro-right {
-  top: 30vh;
+  top: 8vh;
   right: 6vw;
   width: 38vw;
   text-align: right;
@@ -609,29 +651,33 @@ section {
 
 @media only screen and (max-width: 512px) and (min-width: 0px) {
   #section2 {
-    height: 200vh;
+    height: 165vh;
     flex-direction: column;
-    scroll-snap-align: none; }
+    scroll-snap-align: none;
+    scroll-snap-stop: none; }
   .s2-p1 {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     top: 0;
     background-color: #f5f5f5;
     scroll-snap-align: start;
     scroll-snap-stop: always; }
   .s2-p2 {
     width: 100vw;
-    height: 100vh;
-    top: 100vh;
+    height: 75vh;
+    top: 90vh;
     left: 0;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     background-color: #06080f; }
   .intro-2 {
-    font-size: 14vw; }
+    font-size: 14vw;
+    right: 6.5vw;
+    padding-left: 1.0vw; }
   .work-container {
     font-size: 4vw;
     top: 40vh;
+    right: 6.5vw;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -639,15 +685,21 @@ section {
     width: 90vw;
     padding-left: 1.5vw; }
   .work-logo-1 {
-    margin-left: -0.5vw; }
+    margin-right: -0.5vw; }
   .work-company-years {
     font-size: 4vw; }
   .work-company-name a {
     font-size: 5vw; }
   .education-container {
-    top: 50vh;
+    top: 35vh;
     width: 90%;
-    padding-right: 2vw; }
+    padding-left: 2vw;
+    padding-right: 0;
+    right: unset;
+    left: 6vw;
+    right: unset;
+    align-items: flex-start;
+    text-align: left; }
   .top-rectangle {
     height: 10vh;
     width: 100%;
@@ -660,13 +712,19 @@ section {
   .s2-intro-right {
     font-size: 14vw;
     width: 90vw;
-    padding-right: 1vw; }
+    padding-left: 1vw;
+    top: 15vh;
+    left: 6.5vw;
+    right: unset;
+    text-align: left; }
   .school-year {
     font-size: 4vw; }
   .school-name a {
     font-size: 5vw; }
   .school {
-    font-size: 4vw; } }
+    font-size: 4vw;
+    align-items: flex-start;
+    text-align: left; } }
 
 #section3 {
   background-color: #06080f;
@@ -776,19 +834,33 @@ section {
   background-color: rgba(0, 0, 0, 0.85);
   font-size: 1vw; }
 
+.s3-title {
+  font-size: 2.5vw;
+  left: 6vw;
+  top: 3vh;
+  width: 38vw;
+  text-align: left;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  z-index: 1;
+  position: absolute; }
+
 @media only screen and (max-width: 512px) and (min-width: 0px) {
   #section3 {
     height: 100vh;
     width: 100%;
     background-color: #06080f;
-    scroll-snap-align: center;
-    scroll-snap-stop: always; }
+    scroll-snap-align: none;
+    scroll-snap-stop: none; }
+  .s3-title {
+    font-size: 8vw;
+    top: 2vh; }
   .s3-p2 {
     height: 38vh;
     opacity: 1;
     top: 50vh;
     width: 84vw;
-    left: 8vw;
+    left: 6.5vw;
     margin-top: 2vh;
     margin-bottom: 10vh; }
   .s3-p1 {
@@ -796,7 +868,7 @@ section {
     opacity: 1;
     top: 0vh;
     width: 84vw;
-    left: 8vw;
+    left: 6.5vw;
     margin-top: 10vh;
     margin-bottom: 2vh; }
   .project-title a {
@@ -835,7 +907,7 @@ section {
   position: absolute; }
 
 .s4-project1 {
-  height: 20%;
+  height: 80%;
   width: 100%;
   top: 0;
   background-color: #06080f;
@@ -927,6 +999,9 @@ section {
   transition-duration: 400ms; }
 
 @media only screen and (max-width: 512px) and (min-width: 0px) {
+  #section4 {
+    scroll-snap-align: none;
+    scroll-snap-stop: none; }
   .section4-description-container {
     left: 8vw;
     top: 48vh;
@@ -1003,6 +1078,9 @@ section {
 @media (min-width: 300px) {
   .s5-p1 a {
     font-size: 10vw; }
+  #section5 {
+    scroll-snap-align: none;
+    scroll-snap-stop: none; }
   .lets-connect {
     font-size: 4.5vh;
     writing-mode: vertical-lr;
@@ -1018,6 +1096,9 @@ section {
     transition: 0.3s; } }
 
 @media (min-width: 576px) {
+  #section5 {
+    scroll-snap-align: none;
+    scroll-snap-stop: none; }
   .s5-p1 {
     left: 0;
     width: 100vw; }
@@ -1025,7 +1106,10 @@ section {
     font-size: 10vw; }
   .lets-connect {
     font-size: 5vw;
-    writing-mode: vertical-lr; } }
+    writing-mode: vertical-lr; }
+  #section5 {
+    scroll-snap-align: start;
+    scroll-snap-stop: always; } }
 
 @media (min-width: 768px) {
   .s5-p1 {
@@ -1035,7 +1119,10 @@ section {
     font-size: 6vw; }
   .lets-connect {
     font-size: 3vw;
-    writing-mode: vertical-lr; } }
+    writing-mode: vertical-lr; }
+  #section5 {
+    scroll-snap-align: start;
+    scroll-snap-stop: always; } }
 
 .dot {
   width: 1px;

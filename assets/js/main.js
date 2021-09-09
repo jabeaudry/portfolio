@@ -43,6 +43,14 @@ $(document).ready(function () {
   var githubButton = document.getElementsByClassName("github");
   var behanceButton = document.getElementsByClassName("behance");
 
+
+  // variables that let the animations run once only
+  var section1Animation = true;
+  var section2Animation = true;
+  var section3Animation = true;
+  var section4Animation = true;
+  var section5Animation = true;
+
   //
   //
   // VARIABLES (END)
@@ -78,12 +86,22 @@ $(document).ready(function () {
       s1_t7 = new TimelineMax();
       s1_t20 = new TimelineMax();
 
+      
+
       //animation of rectangles
       if (window.innerWidth <= 576) {   //phone
         return;
-    }
-      
+      }
+      else if (section1Animation == false){
+        s1_t20.fromTo(menuIcon, 0.5, { stroke: white }, { stroke: black });
+        $(picBackground).css({"top": "50vh", "width": "21vw", "opacity":"1"});
+      }
       else {
+
+      //stops the animation after loading once
+      section1Animation = false;
+
+
       s1_t7
         .fromTo(
           picBackground,
@@ -122,37 +140,23 @@ $(document).ready(function () {
       s1_t14 = new TimelineMax();
       s2_t20 = new TimelineMax();
 
+      
+      
 
       if (window.innerWidth <= 576) {   //phone
        return;
 
       }
-      else {
-        s1_t13.fromTo(
-          intro2pt2,
-          1,
-          { opacity: "0", top: "13vh" },
-          { opacity: "1", top: "8vh" }
-        );
+      else if (section2Animation == false){
+        
       }
-      s1_t10.fromTo(
-        s3p1,
-        1,
-        { left: "6vw", opacity: "1" },
-        { left: "2vw", opacity: "0" }
-      );
-      s1_t11.fromTo(
-        s3p2,
-        1,
-        { right: "6vw", opacity: "1" },
-        { right: "2vw", opacity: "0" }
-      );
-      s1_t14.fromTo(
-        intro2,
-        1,
-        { opacity: "0", top: "29vh" },
-        { opacity: "1", top: "37vh" }
-      );
+      else {
+        //stops the animation after loading once
+        section2Animation = false;
+
+
+      }
+    
       s1_t8.fromTo(s2p2, 0.9, { opacity: "1" }, { opacity: "1" });
       console.log("2");
       s2_t20
@@ -164,13 +168,26 @@ $(document).ready(function () {
       }
 
     else if (selection == "section3") {
+
+      //time variables
       s3_t1 = new TimelineMax();
       s3_t2 = new TimelineMax();
       s3_t3 = new TimelineMax();
+
+      //stops the animation after loading once
+      
+
+
       if (window.innerWidth <= 576) {   //phone
         return;
       }
+      else if (section3Animation == false){
+      
+        $(s3p1).css({"opacity": "1", "left": "6vw"});
+        $(s3p2).css({"opacity": "1", "right": "6vw"});
+      }
       else{
+      section3Animation = false;
       s3_t1.fromTo(
         s3p1,
         1,
@@ -189,16 +206,26 @@ $(document).ready(function () {
   }
 
     if (selection == "section4") {
+
+      //time variables
       s4_t1 = new TimelineMax();
       s4_t2 = new TimelineMax();
       s4_t5 = new TimelineMax();
       s4_t6 = new TimelineMax();
 
+      
 
       if (window.innerWidth <= 576) {   //phone
         return;
       }
-      else{
+      else if (section4Animation == false){
+        $(section4Project).css({"top": "0", "height": "100%"});
+        $(section4ProjectTop).css({"opacity": "1"});
+      }
+      else {
+        
+      //stops the animation after loading once
+      section4Animation = false;
       s4_t1.fromTo(
         s3p1,
         1,
@@ -211,17 +238,24 @@ $(document).ready(function () {
         { right: "6vw", opacity: "1" },
         { right: "2vw", opacity: "0" }
       );
-      s4_t5.fromTo(section4Project, 0.8, { top:"-5vh", height: "50%" }, { top:"0",height: "100%" });
-      s4_t6.fromTo(section4ProjectTop, 0.5, { opacity: "0" }, { opacity: "0" })
+      s4_t5.fromTo(section4Project, 0.55, { top:"0", height: "80%" }, { top:"0",height: "100%" });
+      s4_t6.fromTo(section4ProjectTop, 0.55, { opacity: "0" }, { opacity: "0" })
       .fromTo(section4ProjectTop, 0.8, { opacity: "0" }, { opacity: "1" });
       }
     }
     if (selection == "section5") {
+
+      //stops the animation after loading once
+      
       s5_t1 = new TimelineMax();
       if (window.innerWidth <= 576) {   //phone
         return;
       }
+      else if (section5Animation == false){
+
+      }
       else{
+        section5Animation = false;
         s5_t1.fromTo(section4ProjectTop, 0.2, { opacity: "1" }, { opacity: "0" });
       }
     }

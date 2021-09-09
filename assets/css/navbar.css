@@ -170,3 +170,20 @@ h1 {
     transform: translateY(100%); }
   50%, 100% {
     transform: translateY(0); } }
+
+@media only screen and (max-width: 512px) and (min-width: 0px) {
+  .icon--menu {
+    stroke: #55555f; }
+  .main-navigation-toggle {
+    position: fixed;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; }
+    .main-navigation-toggle + label {
+      position: fixed;
+      top: calc(var(--space) * 1.2);
+      right: calc(var(--space) * 1);
+      cursor: pointer;
+      z-index: 401; } }

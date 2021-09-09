@@ -2,10 +2,13 @@
 $main-black: #06080f;
 $secondary-black: #222531;
 $main-white: #f5f5f5;
+$icon-blue: blue;
 
 
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:900&display=swap');
+
+
 
 :root {
   --color-primary: #06080f;
@@ -206,4 +209,26 @@ h1 {
 @keyframes link-appear {
   0%, 25%   { transform: translateY(100%); }
   50%, 100% { transform: translateY(0); }
+}
+
+@media only screen and (max-width: 512px) and (min-width: 0px) {
+  .icon--menu {
+    stroke: rgb(85, 85, 95);
+  }
+  .main-navigation-toggle {
+    position: fixed;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    
+    + label {
+      position: fixed;
+      top: calc(var(--space) * 1.2);
+      right: calc(var(--space) * 1);
+      cursor: pointer;
+      z-index: 401;
+    }
+  }
 }
