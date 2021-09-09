@@ -452,7 +452,7 @@ section {
     opacity: 1;
     z-index: 100; }
   .s1-intro-right {
-    bottom: 66vh;
+    bottom: 65vh;
     top: unset;
     font-size: 42vw;
     right: calc(var(--space) * 3);
