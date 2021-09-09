@@ -651,7 +651,7 @@ section {
 
 @media only screen and (max-width: 512px) and (min-width: 0px) {
   #section2 {
-    height: 165vh;
+    height: 175vh;
     flex-direction: column;
     scroll-snap-align: none;
     scroll-snap-stop: none; }
@@ -664,7 +664,7 @@ section {
     scroll-snap-stop: always; }
   .s2-p2 {
     width: 100vw;
-    height: 75vh;
+    height: 85vh;
     top: 90vh;
     left: 0;
     scroll-snap-align: start;
@@ -847,38 +847,42 @@ section {
 
 @media only screen and (max-width: 512px) and (min-width: 0px) {
   #section3 {
-    height: 100vh;
+    height: 99vh;
     width: 100%;
     background-color: #06080f;
     scroll-snap-align: none;
     scroll-snap-stop: none; }
   .s3-title {
-    font-size: 8vw;
+    font-size: 13vw;
     top: 2vh; }
   .s3-p2 {
     height: 38vh;
     opacity: 1;
-    top: 50vh;
+    top: 55vh;
     width: 84vw;
     left: 6.5vw;
     margin-top: 2vh;
-    margin-bottom: 10vh; }
+    margin-bottom: 5vh; }
   .s3-p1 {
     height: 38vh;
     opacity: 1;
-    top: 0vh;
+    top: 5vh;
     width: 84vw;
     left: 6.5vw;
     margin-top: 10vh;
     margin-bottom: 2vh; }
   .project-title a {
-    font-size: 5vw; }
+    font-size: 4.2vw; }
   .project-description {
     height: 80%;
     top: 10%; }
   .project-description#project1 {
     height: 80%;
-    top: 10%; } }
+    top: 10%; }
+  .project-text {
+    font-size: 3.2vw; }
+  .project-language {
+    font-size: 2.5vw; } }
 
 #section4 {
   background-color: #f5f5f5;
@@ -1001,27 +1005,46 @@ section {
 @media only screen and (max-width: 512px) and (min-width: 0px) {
   #section4 {
     scroll-snap-align: none;
-    scroll-snap-stop: none; }
+    scroll-snap-stop: none;
+    height: 80vh;
+    font-family: "inter", sans-serif; }
+  .s4-p1 {
+    height: 75vh;
+    width: 100vw;
+    background-color: #f5f5f5; }
+  .s4-p2 {
+    top: 60vh; }
   .section4-description-container {
-    left: 8vw;
-    top: 48vh;
-    width: 70vw;
-    height: 25vh;
+    left: 5%;
+    bottom: 8%;
+    width: 90%;
+    height: 20%;
+    top: unset;
     position: absolute; }
   .section4-project {
-    height: 25vh;
-    left: 5vw;
+    height: auto;
+    width: 100%;
+    left: 0vw;
     opacity: 1; }
   .s4-project1-top {
     opacity: 1;
-    height: 80vh; }
+    height: 38vh;
+    top: 0.5vh;
+    width: 84vw;
+    left: 6.5vw;
+    background-color: #f5f5f5; }
   .section4-picture-container {
-    height: 25vh;
-    width: 88vw; }
+    height: auto;
+    width: 100%;
+    top: 10%;
+    margin-right: 0;
+    border-right: unset; }
   .section4-description-text {
-    font-size: 4vw; }
+    font-size: 3.2vw;
+    color: #06080f; }
   .section4-description-title a {
-    font-size: 7vw; }
+    font-size: 4.2vw;
+    color: #06080f; }
   .dot.s2-dot.dot-when-mobile {
     left: 3vw;
     top: -250vh; } }

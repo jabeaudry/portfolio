@@ -58,6 +58,10 @@ $(document).ready(function () {
   //
 
   AOS.init(); //js scroll animation library
+
+  //AOS applied only to mobile
+  
+
   //closes the navbar when you click on a link
   $(".nav-link").on("click", function () {
     var check = $(".main-navigation-toggle");
