@@ -56,11 +56,42 @@ $(document).ready(function () {
   // VARIABLES (END)
   //
   //
+  //AOS applied only to mobile
+  if (window.innerWidth <= 576) {   //phone
+    
+    $(".intro-2").attr({
+      "data-aos-duration":"1500",
+      "data-aos-offset":"300",
+      "data-aos":"fade-down"
+    });
+    $(".intro-2-right").attr({
+      "data-aos-duration":"1500",
+      "data-aos":"fade-down",
+      "data-aos-anchor-placement":"bottom-bottom"
+    });
 
+    $(".s3-p1").attr({
+      "data-aos":"fade-right",
+      "data-aos-duration":"800"
+    });
+    $(".s3-p2").attr({
+      "data-aos":"fade-left",
+      "data-aos-duration":"800"
+    });
+    $(".s4-project1-top").attr({
+      "data-aos":"fade-right",
+      "data-aos-duration":"800"
+    })
+    $(".s3-title").attr({
+      "data-aos":"fade-left",
+      "data-aos-duration":"800"
+    })
+
+  }
+
+  
   AOS.init(); //js scroll animation library
 
-  //AOS applied only to mobile
-  
 
   //closes the navbar when you click on a link
   $(".nav-link").on("click", function () {
