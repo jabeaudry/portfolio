@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Antic+Slab&family=Domine&family=Merriweather:wght@300&display=swap");
 /* Skew Forward */
 @import url("https://fonts.googleapis.com/css?family=Merriweather:900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap");
 .hvr-skew-forward {
   display: inline-block;
   vertical-align: middle;
@@ -130,8 +131,8 @@ a {
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   --space: 1rem;
-  --font-primary: 'Helvetica', sans-serif;
-  --font-heading: 'Merriweather', serif;
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Inter', serif;
   --font-size: 1.125rem;
   --line-height: 1.5; }
 
