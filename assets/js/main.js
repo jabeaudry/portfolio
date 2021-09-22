@@ -129,7 +129,7 @@ $(document).ready(function () {
       }
       else if (section1Animation == false){
         s1_t20.fromTo(menuIcon, 0.5, { stroke: white }, { stroke: black });
-        $(picBackground).css({"top": "50vh", "width": "21vw", "opacity":"1"});
+        //$(picBackground).css({"top": "50vh", "width": "21vw", "opacity":"1"});
       }
       else {
 
@@ -196,7 +196,7 @@ $(document).ready(function () {
       console.log("2");
       s2_t20
         .fromTo(menuIcon, 0.5, { stroke: black }, { stroke: white })
-        .fromTo(picBackground, 0.3, { opacity: "1" }, { opacity: "0" });
+        
     
       
     
