@@ -1324,7 +1324,7 @@ section {
     width: 100%;
     left: 0vw;
     opacity: 1;
-    
+    right: 0;
   }
 
   .s4-project1-top {
@@ -1340,6 +1340,7 @@ section {
     height: auto;
     width: 100%;
     top: 10%;
+    left: 0vw;
     margin-right: 0;
     border-right: unset;
   }
@@ -1406,9 +1407,10 @@ section {
   .section4-picture-container {
     height: auto;
     width: 100%;
-    top: 10%;
+    top: 0%;
     margin-right: 0;
     border-right: unset;
+    left: 0vw;
   }
 
   .section4-description-text {
@@ -1436,8 +1438,8 @@ section {
     top: 11vh;
     left: 22.5vw;
     position: absolute;
-    border-right: none;
-    margin-right: none;
+    border-right: unset;
+    margin-right: unset;
   }
   
   .section4-project {

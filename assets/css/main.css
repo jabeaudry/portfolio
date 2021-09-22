@@ -1206,7 +1206,8 @@ section {
     height: auto;
     width: 100%;
     left: 0vw;
-    opacity: 1; }
+    opacity: 1;
+    right: 0; }
   .s4-project1-top {
     opacity: 1;
     height: 38vh;
@@ -1218,6 +1219,7 @@ section {
     height: auto;
     width: 100%;
     top: 10%;
+    left: 0vw;
     margin-right: 0;
     border-right: unset; }
   .section4-description-text {
@@ -1265,9 +1267,10 @@ section {
   .section4-picture-container {
     height: auto;
     width: 100%;
-    top: 10%;
+    top: 0%;
     margin-right: 0;
-    border-right: unset; }
+    border-right: unset;
+    left: 0vw; }
   .section4-description-text {
     font-size: 2.5vw;
     color: #06080f; }
@@ -1285,8 +1288,8 @@ section {
     top: 11vh;
     left: 22.5vw;
     position: absolute;
-    border-right: none;
-    margin-right: none; }
+    border-right: unset;
+    margin-right: unset; }
   .section4-project {
     height: auto;
     right: 0%;
