@@ -160,7 +160,7 @@ a {
 @import "navbar";
 
 // Small devices (landscape phones, 576px and up)
-@media only screen and (max-width: 512px) and (min-width: 0px) {
+@media only screen and (max-width: 768px) and (min-width: 0px) {
   html {
     scroll-snap-type: none;
     scroll-behavior: none;
@@ -412,6 +412,84 @@ section {
     width: 37vw;
     opacity: 1;
     bottom: 55vh;
+  }
+
+
+
+}
+@media only screen and (max-width: 768px) and (min-width: 513px) {
+  
+  .s1-arrow{
+    position: absolute;
+    top: 8vh;
+    width: 6vh;
+    height: auto;
+    left: 47vw;
+    opacity: 1;
+    z-index: 100;
+  }
+  .s1-intro-right {
+    bottom: 75vh;
+    top: unset;
+    font-size: 42vw;
+    right: calc(var(--space) * 3);
+    color: $main-white;
+    position: absolute;
+    width: auto;
+    padding-bottom: 3vh;
+  }
+  .s1-intro-right:hover {
+    color: $main-white;
+  }
+  .s1-intro:hover {
+    color: $main-white;
+  }
+  .s1-intro {
+    top: 35vh;
+    font-size: 20vw;
+    color: $main-white;
+    left: 5vw;
+  }
+  .s1-sub-intro {
+    font-size: 4.5vw;
+    bottom: -40%;
+    width: 80%;
+    left: 6.5vw;
+    right: unset;
+    text-align: left;
+    height: 40vh;
+  }
+  .my-picture {
+    top: 59vh;
+    width: 32vw;
+    opacity: 1;
+    left: 9vw;
+  }
+  #section1 {
+    height: 145vh;
+    flex-direction: column;
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+  }
+  .s1-p1 {
+    width: 100vw;
+    height: 85vh;
+    top: 0;
+    background-color: $main-black;
+    scroll-snap-align: start;
+  }
+  .s1-p2 {
+    width: 100vw;
+    height: 60vh;
+    top: 100vh;
+    left: 0;
+    scroll-snap-align: end;
+  }
+  .picture-background {
+    height: 28vh;
+    width: 37vw;
+    opacity: 1;
+    bottom: 58vh;
   }
 
 
@@ -698,6 +776,109 @@ section {
   }
 }
 
+@media only screen and (max-width: 768px) and (min-width: 513px) {
+  #section2 {
+    height: 175vh;
+    flex-direction: column;
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+    
+  }
+  .s2-p1 {
+    width: 100vw;
+    height: 90vh;
+    top: 0;
+    background-color: $main-white;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  .s2-p2 {
+    width: 100vw;
+    height: 85vh;
+    top: 90vh;
+    left: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: $main-black;
+  }
+
+  .intro-2 {
+    font-size: 10vw;
+    right: 6.5vw;
+    padding-left: 1.0vw;
+  }
+
+  .work-container {
+    font-size: 2.8vw;
+    top: 40vh;
+    right: 6.5vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    padding-left: 1.5vw;
+  }
+
+  .work-logo-1 {
+    margin-right: -0.5vw;
+  }
+  .work-company-years {
+    font-size: 2.7vw;
+  }
+
+  .work-company-name a {
+    font-size: 3.5vw;
+  }
+
+  .education-container {
+    top: 35vh;
+    width: 90%;
+    padding-left: 2vw;
+    padding-right:0;
+    right: unset;
+    left: 6vw;
+    right: unset;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .top-rectangle {
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: $main-black;
+    z-index: 100;
+    position: absolute;
+  }
+
+  .s2-intro-right {
+    font-size: 10vw;
+    width: 90vw;
+    padding-left: 1vw;
+    top: 15vh;
+    left: 6.5vw;
+    right: unset;
+    text-align: left;
+  }
+
+  .school-year {
+    font-size: 2.7vw;
+  }
+
+  .school-name a {
+    font-size: 3.5vw;
+  }
+
+  .school {
+    font-size: 2.8vw;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   $rect-height: 2.5vw;
@@ -914,6 +1095,58 @@ section {
   }
 }
 
+
+@media only screen and (max-width: 768px) and (min-width: 513px)  {
+  #section3 {
+    height: 99vh;
+    width: 100%;
+    background-color: $main-black;
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+  }
+  .s3-title {
+    font-size: 10vw;
+    top: 2vh;
+  }
+  .s3-p2 {
+    height: 38vh;
+    opacity: 1;
+    top: 55vh;
+    width: 84vw;
+    left: 6.5vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    
+  }
+  .s3-p1 {
+    height: 38vh;
+    opacity: 1;
+    top: 5vh;
+    width: 84vw;
+    left: 6.5vw;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+  }
+  .project-title a {
+    font-size: 3vw;
+  }
+  .project-description {
+    height: 80%;
+    top: 10%;
+  }
+  .project-description#project1 {
+    height: 80%;
+    top: 10%;
+  }
+
+  .project-text {
+    font-size: 2.5vw;
+  }
+  .project-language {
+    font-size: 1.9vw;
+  }
+}
+
 //
 //
 //
@@ -1126,7 +1359,120 @@ section {
   }
 
 }
+@media only screen and (max-width: 768px) and (min-width: 513px)  {
+  
+  #section4 {
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+    height: 68vh;
+    font-family: "inter", sans-serif;
+  }
 
+  .s4-p1 {
+  height: 60vh;
+  width: 100vw;
+  background-color: $main-white;
+  }
+
+  .s4-p2 {
+    top: 58vh;
+    height: 10vh;
+  }
+  .section4-description-container {
+    left: 10%;
+    bottom: 6%;
+    width: 80%;
+    height: 20%;
+    top: unset;
+    position: absolute;
+  }
+  .section4-project {
+    height: auto;
+    width: 80%;
+    left: 5.3vw;
+    opacity: 1;
+    
+  }
+
+  .s4-project1-top {
+    opacity: 1;
+    height: 38vh;
+    top: 0.5vh;
+    width: 84vw;
+    left: 6.5vw;
+    background-color: $main-white;
+  }
+
+  .section4-picture-container {
+    height: auto;
+    width: 100%;
+    top: 10%;
+    margin-right: 0;
+    border-right: unset;
+  }
+
+  .section4-description-text {
+    font-size:2.5vw;
+    color: $main-black;
+  }
+  .section4-description-title a {
+    font-size: 3.2vw;
+    color: $main-black;
+  }
+
+  .dot.s2-dot.dot-when-mobile { 
+    left: 3vw;
+    top: -250vh;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 769px)  {
+  
+  
+  .section4-picture-container {
+    height: auto;
+    width: 55vw;
+    top: 11vh;
+    left: 22.5vw;
+    position: absolute;
+    border-right: none;
+    margin-right: none;
+  }
+  
+  .section4-project {
+    height: auto;
+    right: 0%;
+    margin: auto;
+    width: 100%;
+    position: relative;
+  }
+  
+  .section4-description-container {
+    width: 55vw;
+    left: 22.5vw;
+    height: 16vh;
+    top: 57vh;
+    bottom: 10vh;
+    text-align: center;
+    position: absolute;
+    color: $main-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 1px solid $main-white;
+  }
+  
+  .section4-description-title a {
+    font-size: 3vw;
+    color: $main-white;
+    text-decoration: underline;
+  }
+  
+  .section4-description-text {
+    font-size: 1.9vw;
+  }
+}
 //
 //
 //

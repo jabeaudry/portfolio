@@ -57,7 +57,7 @@ $(document).ready(function () {
   //
   //
   //AOS applied only to mobile
-  if (window.innerWidth <= 576) {   //phone
+  if (window.innerWidth <= 768) {   //phone
     
     $(".intro-2").attr({
       "data-aos-duration":"1500",
@@ -124,7 +124,7 @@ $(document).ready(function () {
       
 
       //animation of rectangles
-      if (window.innerWidth <= 576) {   //phone
+      if (window.innerWidth <= 768) {   //phone
         return;
       }
       else if (section1Animation == false){
@@ -178,7 +178,7 @@ $(document).ready(function () {
       
       
 
-      if (window.innerWidth <= 576) {   //phone
+      if (window.innerWidth <= 786) {   //phone
        return;
 
       }
@@ -213,7 +213,7 @@ $(document).ready(function () {
       
 
 
-      if (window.innerWidth <= 576) {   //phone
+      if (window.innerWidth <= 768) {   //phone
         return;
       }
       else if (section3Animation == false){
@@ -250,7 +250,7 @@ $(document).ready(function () {
 
       
 
-      if (window.innerWidth <= 576) {   //phone
+      if (window.innerWidth <= 768) {   //phone
         return;
       }
       else if (section4Animation == false){
@@ -283,7 +283,7 @@ $(document).ready(function () {
       //stops the animation after loading once
       
       s5_t1 = new TimelineMax();
-      if (window.innerWidth <= 576) {   //phone
+      if (window.innerWidth <= 768) {   //phone
         return;
       }
       else if (section5Animation == false){
