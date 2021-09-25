@@ -1321,8 +1321,8 @@ section {
   }
   .section4-project {
     height: auto;
-    width: 95%;
-    left: 2.5%;
+    width: 100%;
+    left: 0;
     opacity: 1;
     right: 0;
   }
@@ -1338,9 +1338,9 @@ section {
 
   .section4-picture-container {
     height: auto;
-    width: 100%;
+    width: 95%;
     top: 10%;
-    left: 0vw;
+    left: 2.5%;
     margin-right: 0;
     border-right: unset;
   }
