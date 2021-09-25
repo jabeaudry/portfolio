@@ -352,7 +352,7 @@ section {
     z-index: 100;
   }
   .s1-intro-right {
-    bottom: 65vh;
+    bottom: 67vh;
     top: unset;
     font-size: 42vw;
     right: calc(var(--space) * 3);
@@ -1076,7 +1076,7 @@ section {
     margin-bottom: 2vh;
   }
   .project-title a {
-    font-size: 4.2vw;
+    font-size: 3.3vw;
   }
   .project-description {
     height: 80%;
@@ -1088,10 +1088,10 @@ section {
   }
 
   .project-text {
-    font-size: 3.2vw;
+    font-size: 2.8vw;
   }
   .project-language {
-    font-size: 2.5vw;
+    font-size: 2.4vw;
   }
 }
 
@@ -1321,8 +1321,8 @@ section {
   }
   .section4-project {
     height: auto;
-    width: 100%;
-    left: 0vw;
+    width: 95%;
+    left: 2.5%;
     opacity: 1;
     right: 0;
   }
@@ -1346,11 +1346,11 @@ section {
   }
 
   .section4-description-text {
-    font-size:3.2vw;
+    font-size:2.8vw;
     color: $main-black;
   }
   .section4-description-title a {
-    font-size: 4.2vw;
+    font-size: 3.3vw;
     color: $main-black;
   }
 
@@ -1600,11 +1600,11 @@ section {
   }
 
   .s5-p1 a {
-    font-size: 6vw;
+    font-size: 5.7vw;
   }
 
   .lets-connect {
-    font-size: 3vw;
+    font-size: 2.9vw;
     writing-mode: vertical-lr;
   }
   #section5 {
