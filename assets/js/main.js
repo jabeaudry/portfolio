@@ -291,7 +291,7 @@ $(document).ready(function () {
       }
       else{
         section5Animation = false;
-        s5_t1.fromTo(section4ProjectTop, 0.2, { opacity: "1" }, { opacity: "0" });
+      
       }
     }
   }

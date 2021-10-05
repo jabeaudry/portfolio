@@ -1027,7 +1027,7 @@ section {
     font-size: 1.9vw; } }
 
 #section4 {
-  background-color: #f5f5f5;
+  background-color: #06080f;
   width: 100vw;
   height: 70vh;
   z-index: 2;
@@ -1051,7 +1051,7 @@ section {
   position: absolute; }
 
 .s4-project1 {
-  height: 80%;
+  height: 100%;
   width: 100%;
   top: 0;
   background-color: #06080f;
@@ -1059,13 +1059,13 @@ section {
   position: absolute; }
 
 .s4-project1-top {
-  height: 90%;
+  height: 100%;
   width: 100%;
   top: 0;
   background-color: #06080f;
   margin: auto;
   position: absolute;
-  opacity: 0; }
+  opacity: 1; }
 
 .section4-picture-container {
   height: 35vh;
@@ -1114,7 +1114,8 @@ section {
   width: 50vw;
   color: #06080f;
   border-top: 6px solid #06080f;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #f5f5f5; }
 
 .github:hover {
   color: blue;
@@ -1134,7 +1135,8 @@ section {
   text-align: center;
   color: #06080f;
   border-top: 6px solid #06080f;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #f5f5f5; }
 
 .behance:hover {
   color: blue;

@@ -1124,7 +1124,7 @@ section {
 //
 
 #section4 {
-  background-color: $main-white;
+  background-color: $main-black;
   width: 100vw;
   height: 70vh;
   z-index: 2;
@@ -1151,7 +1151,7 @@ section {
 }
 
 .s4-project1 {
-  height: 80%;
+  height: 100%;
   width: 100%;
   top: 0;
   background-color: $main-black;
@@ -1160,13 +1160,13 @@ section {
 }
 
 .s4-project1-top {
-  height: 90%;
+  height: 100%;
   width: 100%;
   top: 0;
   background-color: $main-black;
   margin: auto;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
 }
 
 .section4-picture-container {
@@ -1222,6 +1222,7 @@ section {
   color: $main-black;
   border-top: 6px solid $main-black;
   cursor: pointer;
+  background-color: $main-white;
 }
 
 .github:hover {
@@ -1244,6 +1245,7 @@ section {
   color: $main-black;
   border-top: 6px solid $main-black;
   cursor: pointer;
+  background-color: $main-white;
 }
 
 .behance:hover {
