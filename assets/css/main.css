@@ -850,11 +850,13 @@ section {
   position: absolute;
   top: 13vh;
   background-color: #f5f5f5;
-  opacity: 0; }
+  opacity: 0;
+  left: 6vw; }
 
 .s3-p2 {
   height: 74vh;
   width: 41vw;
+  right: 6vw;
   position: absolute;
   top: 13vh;
   opacity: 0;
@@ -1027,7 +1029,7 @@ section {
 #section4 {
   background-color: #f5f5f5;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   z-index: 2;
   display: flex;
   flex-direction: row;
@@ -1038,11 +1040,11 @@ section {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 80vh;
+  height: 50vh;
   position: absolute; }
 
 .s4-p2 {
-  top: 80vh;
+  top: 50vh;
   left: 0;
   width: 100vw;
   height: 20vh;
@@ -1068,7 +1070,7 @@ section {
 .section4-picture-container {
   height: 35vh;
   width: 30vw;
-  top: 19.5vh;
+  top: 2vh;
   left: 20vw;
   position: relative;
   border-right: 1px solid #f5f5f5;
@@ -1085,7 +1087,7 @@ section {
   width: 37vw;
   left: 55vw;
   height: 25vh;
-  top: 24vh;
+  top: 6.5vh;
   position: absolute;
   color: #f5f5f5;
   display: flex;
@@ -1364,3 +1366,11 @@ section {
 
 .dot.dot-section-1 {
   bottom: 75vh; }
+
+.dot.dot-s4 {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 50vh;
+  right: 2vh;
+  z-index: 30; }

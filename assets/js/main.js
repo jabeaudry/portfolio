@@ -202,82 +202,82 @@ $(document).ready(function () {
     
       }
 
-    else if (selection == "section3") {
+    // else if (selection == "section3") {
 
-      //time variables
-      s3_t1 = new TimelineMax();
-      s3_t2 = new TimelineMax();
-      s3_t3 = new TimelineMax();
+    //   //time variables
+    //   s3_t1 = new TimelineMax();
+    //   s3_t2 = new TimelineMax();
+    //   s3_t3 = new TimelineMax();
 
       //stops the animation after loading once
       
 
 
-      if (window.innerWidth <= 768) {   //phone
-        return;
-      }
-      else if (section3Animation == false){
+  //     if (window.innerWidth <= 768) {   //phone
+  //       return;
+  //     }
+  //     else if (section3Animation == false){
       
-        $(s3p1).css({"opacity": "1", "left": "6vw"});
-        $(s3p2).css({"opacity": "1", "right": "6vw"});
-      }
-      else{
-      section3Animation = false;
-      s3_t1.fromTo(
-        s3p1,
-        1,
-        { left: "2vw", opacity: "0" },
-        { left: "6vw", opacity: "1" }
-      );
-      s3_t2.fromTo(
-        s3p2,
-        1,
-        { right: "2vw", opacity: "0" },
-        { right: "6vw", opacity: "1" }
-      );
-      s3_t3.fromTo(section4Project, 1, { top: "0" }, { top: "0" })
-      .fromTo(section4ProjectTop, 0.1, { opacity: "1" }, { opacity: "0" });
-    }
-  }
+  //       $(s3p1).css({"opacity": "1", "left": "6vw"});
+  //       $(s3p2).css({"opacity": "1", "right": "6vw"});
+  //     }
+  //     else{
+  //     section3Animation = false;
+  //     s3_t1.fromTo(
+  //       s3p1,
+  //       1,
+  //       { left: "2vw", opacity: "0" },
+  //       { left: "6vw", opacity: "1" }
+  //     );
+  //     s3_t2.fromTo(
+  //       s3p2,
+  //       1,
+  //       { right: "2vw", opacity: "0" },
+  //       { right: "6vw", opacity: "1" }
+  //     );
+  //     s3_t3.fromTo(section4Project, 1, { top: "0" }, { top: "0" })
+  //     .fromTo(section4ProjectTop, 0.1, { opacity: "1" }, { opacity: "0" });
+  //   }
+  // }
 
-    if (selection == "section4") {
+    // if (selection == "section4") {
 
-      //time variables
-      s4_t1 = new TimelineMax();
-      s4_t2 = new TimelineMax();
-      s4_t5 = new TimelineMax();
-      s4_t6 = new TimelineMax();
+    //   //time variables
+    //   s4_t1 = new TimelineMax();
+    //   s4_t2 = new TimelineMax();
+    //   s4_t5 = new TimelineMax();
+    //   s4_t6 = new TimelineMax();
 
       
 
-      if (window.innerWidth <= 768) {   //phone
-        return;
-      }
-      else if (section4Animation == false){
-        $(section4Project).css({"top": "0", "height": "100%"});
-        $(section4ProjectTop).css({"opacity": "1"});
-      }
-      else {
+    //   if (window.innerWidth <= 768) {   //phone
+    //     return;
+    //   }
+    //   else if (section4Animation == false){
+    //     $(section4Project).css({"top": "0", "height": "100%"});
+    //     $(section4ProjectTop).css({"opacity": "1"});
+    //   }
+    //   else {
         
-      //stops the animation after loading once
-      section4Animation = false;
-      s4_t1.fromTo(
-        s3p1,
-        1,
-        { left: "6vw", opacity: "1" },
-        { left: "2vw", opacity: "0" }
-      );
-      s4_t2.fromTo(
-        s3p2,
-        1,
-        { right: "6vw", opacity: "1" },
-        { right: "2vw", opacity: "0" }
-      );
-      s4_t5.fromTo(section4Project, 0.55, { top:"0", height: "80%" }, { top:"0",height: "100%" });
-      s4_t6.fromTo(section4ProjectTop, 0.55, { opacity: "0" }, { opacity: "0" })
-      .fromTo(section4ProjectTop, 0.8, { opacity: "0" }, { opacity: "1" });
-      }
-    }
+    //   //stops the animation after loading once
+    //   section4Animation = false;
+    //   // s4_t1.fromTo(
+    //   //   s3p1,
+    //   //   1,
+    //   //   { left: "6vw", opacity: "1" },
+    //   //   { left: "2vw", opacity: "0" }
+    //   // );
+    //   // s4_t2.fromTo(
+    //   //   s3p2,
+    //   //   1,
+    //   //   { right: "6vw", opacity: "1" },
+    //   //   { right: "2vw", opacity: "0" }
+    //   // );
+    //   s4_t5.fromTo(section4Project, 0.55, { top:"0", height: "80%" }, { top:"0",height: "100%" });
+    //   s4_t6.fromTo(section4ProjectTop, 0.55, { opacity: "0" }, { opacity: "0" })
+    //   .fromTo(section4ProjectTop, 0.8, { opacity: "0" }, { opacity: "1" });
+    //   }
+    // }
     if (selection == "section5") {
 
       //stops the animation after loading once
