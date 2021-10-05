@@ -114,10 +114,6 @@ body {
   width: 100%;
   position: relative; }
 
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; }
-
 ul {
   list-style: none; }
 
@@ -313,11 +309,6 @@ h1 {
       cursor: pointer;
       z-index: 401; } }
 
-@media only screen and (max-width: 768px) and (min-width: 0px) {
-  html {
-    scroll-snap-type: none;
-    scroll-behavior: none; } }
-
 @media (min-width: 1400px) {
   .picture-txt {
     font-family: monospace;
@@ -331,16 +322,13 @@ h1 {
     opacity: 0; } }
 
 section {
-  overflow: visible;
-  scroll-snap-align: center; }
+  overflow: visible; }
 
 #section1 {
   background-color: #f5f5f5;
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -484,21 +472,17 @@ section {
     opacity: 1; }
   #section1 {
     height: 145vh;
-    flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
+    flex-direction: column; }
   .s1-p1 {
     width: 100vw;
     height: 85vh;
     top: 0;
-    background-color: #06080f;
-    scroll-snap-align: start; }
+    background-color: #06080f; }
   .s1-p2 {
     width: 100vw;
     height: 60vh;
     top: 100vh;
-    left: 0;
-    scroll-snap-align: end; }
+    left: 0; }
   .picture-background {
     height: 25vh;
     width: 37vw;
@@ -547,21 +531,17 @@ section {
     left: 9vw; }
   #section1 {
     height: 145vh;
-    flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
+    flex-direction: column; }
   .s1-p1 {
     width: 100vw;
     height: 85vh;
     top: 0;
-    background-color: #06080f;
-    scroll-snap-align: start; }
+    background-color: #06080f; }
   .s1-p2 {
     width: 100vw;
     height: 60vh;
     top: 100vh;
-    left: 0;
-    scroll-snap-align: end; }
+    left: 0; }
   .picture-background {
     height: 28vh;
     width: 37vw;
@@ -573,8 +553,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -716,23 +694,17 @@ section {
 @media only screen and (max-width: 512px) and (min-width: 0px) {
   #section2 {
     height: 175vh;
-    flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
+    flex-direction: column; }
   .s2-p1 {
     width: 100vw;
     height: 90vh;
     top: 0;
-    background-color: #f5f5f5;
-    scroll-snap-align: start;
-    scroll-snap-stop: always; }
+    background-color: #f5f5f5; }
   .s2-p2 {
     width: 100vw;
     height: 85vh;
     top: 90vh;
     left: 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     background-color: #06080f; }
   .intro-2 {
     font-size: 14vw;
@@ -793,23 +765,17 @@ section {
 @media only screen and (max-width: 768px) and (min-width: 513px) {
   #section2 {
     height: 175vh;
-    flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
+    flex-direction: column; }
   .s2-p1 {
     width: 100vw;
     height: 90vh;
     top: 0;
-    background-color: #f5f5f5;
-    scroll-snap-align: start;
-    scroll-snap-stop: always; }
+    background-color: #f5f5f5; }
   .s2-p2 {
     width: 100vw;
     height: 85vh;
     top: 90vh;
     left: 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     background-color: #06080f; }
   .intro-2 {
     font-size: 10vw;
@@ -872,8 +838,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -990,9 +954,7 @@ section {
   #section3 {
     height: 99vh;
     width: 100%;
-    background-color: #06080f;
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
+    background-color: #06080f; }
   .s3-title {
     font-size: 13vw;
     top: 2vh; }
@@ -1029,9 +991,7 @@ section {
   #section3 {
     height: 99vh;
     width: 100%;
-    background-color: #06080f;
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
+    background-color: #06080f; }
   .s3-title {
     font-size: 10vw;
     top: 2vh; }
@@ -1069,8 +1029,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -1184,8 +1142,6 @@ section {
 
 @media only screen and (max-width: 512px) and (min-width: 0px) {
   #section4 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
     height: 68vh;
     font-family: "inter", sans-serif; }
   .s4-p1 {
@@ -1234,8 +1190,6 @@ section {
 
 @media only screen and (max-width: 768px) and (min-width: 513px) {
   #section4 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
     height: 68vh;
     font-family: "inter", sans-serif; }
   .s4-p1 {
@@ -1321,8 +1275,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -1368,9 +1320,6 @@ section {
 @media (min-width: 300px) {
   .s5-p1 a {
     font-size: 10vw; }
-  #section5 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
   .lets-connect {
     font-size: 4.5vh;
     writing-mode: vertical-lr;
@@ -1386,9 +1335,6 @@ section {
     transition: 0.3s; } }
 
 @media (min-width: 576px) {
-  #section5 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none; }
   .s5-p1 {
     left: 0;
     width: 100vw; }
@@ -1396,10 +1342,7 @@ section {
     font-size: 10vw; }
   .lets-connect {
     font-size: 5vw;
-    writing-mode: vertical-lr; }
-  #section5 {
-    scroll-snap-align: start;
-    scroll-snap-stop: always; } }
+    writing-mode: vertical-lr; } }
 
 @media (min-width: 768px) {
   .s5-p1 {
@@ -1409,10 +1352,7 @@ section {
     font-size: 5.7vw; }
   .lets-connect {
     font-size: 2.9vw;
-    writing-mode: vertical-lr; }
-  #section5 {
-    scroll-snap-align: start;
-    scroll-snap-stop: always; } }
+    writing-mode: vertical-lr; } }
 
 .dot {
   width: 1px;

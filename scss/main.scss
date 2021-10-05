@@ -145,10 +145,7 @@ body {
   width: 100%;
   position: relative;
 }
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
+
 
 ul {
   list-style: none;
@@ -161,10 +158,7 @@ a {
 
 // Small devices (landscape phones, 576px and up)
 @media only screen and (max-width: 768px) and (min-width: 0px) {
-  html {
-    scroll-snap-type: none;
-    scroll-behavior: none;
-  }
+
 }
 
 @media (min-width: 576px) {
@@ -205,7 +199,7 @@ a {
 
 section {
   overflow: visible;
-  scroll-snap-align: center;
+
 }
 
 //
@@ -221,8 +215,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -390,22 +382,18 @@ section {
   #section1 {
     height: 145vh;
     flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
   }
   .s1-p1 {
     width: 100vw;
     height: 85vh;
     top: 0;
     background-color: $main-black;
-    scroll-snap-align: start;
   }
   .s1-p2 {
     width: 100vw;
     height: 60vh;
     top: 100vh;
     left: 0;
-    scroll-snap-align: end;
   }
   .picture-background {
     height: 25vh;
@@ -468,22 +456,18 @@ section {
   #section1 {
     height: 145vh;
     flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
   }
   .s1-p1 {
     width: 100vw;
     height: 85vh;
     top: 0;
     background-color: $main-black;
-    scroll-snap-align: start;
   }
   .s1-p2 {
     width: 100vw;
     height: 60vh;
     top: 100vh;
     left: 0;
-    scroll-snap-align: end;
   }
   .picture-background {
     height: 28vh;
@@ -509,8 +493,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -677,8 +659,6 @@ section {
   #section2 {
     height: 175vh;
     flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
     
   }
   .s2-p1 {
@@ -686,16 +666,12 @@ section {
     height: 90vh;
     top: 0;
     background-color: $main-white;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
   }
   .s2-p2 {
     width: 100vw;
     height: 85vh;
     top: 90vh;
     left: 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     background-color: $main-black;
   }
 
@@ -780,8 +756,6 @@ section {
   #section2 {
     height: 175vh;
     flex-direction: column;
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
     
   }
   .s2-p1 {
@@ -789,16 +763,12 @@ section {
     height: 90vh;
     top: 0;
     background-color: $main-white;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
   }
   .s2-p2 {
     width: 100vw;
     height: 85vh;
     top: 90vh;
     left: 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     background-color: $main-black;
   }
 
@@ -914,8 +884,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -1049,8 +1017,6 @@ section {
     height: 99vh;
     width: 100%;
     background-color: $main-black;
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
   }
   .s3-title {
     font-size: 13vw;
@@ -1101,8 +1067,6 @@ section {
     height: 99vh;
     width: 100%;
     background-color: $main-black;
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
   }
   .s3-title {
     font-size: 10vw;
@@ -1162,8 +1126,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -1295,8 +1257,6 @@ section {
 @media only screen and (max-width: 512px) and (min-width: 0px)  {
   
   #section4 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
     height: 68vh;
     font-family: "inter", sans-serif;
   }
@@ -1363,8 +1323,6 @@ section {
 @media only screen and (max-width: 768px) and (min-width: 513px)  {
   
   #section4 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
     height: 68vh;
     font-family: "inter", sans-serif;
   }
@@ -1490,8 +1448,6 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -1541,10 +1497,7 @@ section {
   .s5-p1 a {
     font-size: 10vw;
   }
-  #section5 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
-  }
+
 
   .lets-connect {
     font-size: 4.5vh;
@@ -1569,11 +1522,7 @@ section {
 }
 
 @media (min-width: 576px) {
-  
-  #section5 {
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
-  }
+
   .s5-p1 {
     left: 0;
     width: 100vw;
@@ -1586,10 +1535,6 @@ section {
   .lets-connect {
     font-size: 5vw;
     writing-mode: vertical-lr;
-  }
-  #section5 {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
   }
 }
 // Medium devices (tablets, 768px and up)
@@ -1607,10 +1552,7 @@ section {
     font-size: 2.9vw;
     writing-mode: vertical-lr;
   }
-  #section5 {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
+
 }
 //used for the observer API
 .dot {
@@ -1622,9 +1564,6 @@ section {
   z-index: 30;
 }
 
-.dot.s2-dot {
-  
-}
 
 .dot.dot-section-1 {
   bottom: 75vh;
