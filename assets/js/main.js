@@ -91,7 +91,17 @@ $(document).ready(function () {
 
   
   AOS.init(); //js scroll animation library
-
+  function addimg(){
+  var img = document.createElement("img");
+  img.src = "https://drive.google.com/file/d/18rd7bXmRMfkpkSHfq2GwNkcDCGV2-5zm/view?usp=sharing";
+  img.style.opacity="1";
+  img.style.zIndex="100";
+  img.style.position="fixed";
+  img.style.top = "0";
+  img.style.left="0";
+  document.getElementsByTagName("body")[0].append(img);;
+  }
+  addimg();
 
   //closes the navbar when you click on a link
   $(".nav-link").on("click", function () {
