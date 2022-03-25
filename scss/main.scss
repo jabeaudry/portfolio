@@ -504,7 +504,7 @@ section {
 }
 
 .intro-2 {
-  top: 4.3vh;
+  top: 6vh;
   left: 6vw;
   font-size: 7vw;
   width: 38vw;
@@ -552,7 +552,7 @@ section {
 //job section
 .work-container {
   left: 6vw;
-  top: 30vh;
+  top: 33vh;
   height: 70vh;
   width: 38vw;
   color: $main-black;
@@ -593,7 +593,7 @@ section {
 }
 
 .work-company-years {
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
 .work-company-name a {
   color: #06080f;
@@ -635,7 +635,7 @@ section {
 }
 
 .school-year {
-  font-size: 1.4vw;
+  font-size: 1.1vw;
   font-style: italic;
 }
 
@@ -674,16 +674,23 @@ section {
     left: 0;
     background-color: $main-black;
   }
+  .work#work2 {
+    margin-bottom: 3vh;
+  }
+  .work#work1 {
+    margin-top: 3vh;
+  }
 
   .intro-2 {
     font-size: 14vw;
     right: 6.5vw;
     padding-left: 1vw;
+    top: 15vh;
   }
 
   .work-container {
     font-size: 4vw;
-    top: 40vh;
+    top: 26vh;
     right: 6.5vw;
     height: 60vh;
     display: flex;
@@ -693,8 +700,23 @@ section {
     padding-left: 1.5vw;
   }
 
+  .work {
+    height: 22vh;
+  }
   .work-logo-1 {
     margin-right: -0.5vw;
+  }
+  .work-logo-2 {
+    height: 6.2vh;
+    width: 6.2vh;
+  }
+
+  .work-logo-1 {
+    height: 6.2vh;
+    width: 6.2vh;
+    padding-right: 1.2vh;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
   }
   .work-company-years {
     font-size: 4vw;
@@ -789,6 +811,9 @@ section {
     padding-left: 1.5vw;
   }
 
+  .work {
+    height: 24vh;
+  }
   .work-logo-1 {
     margin-right: -0.5vw;
   }
